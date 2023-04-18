@@ -1,0 +1,58 @@
+version: "3.5"
+services:
+  php:
+    depends_on:
+        - mysql
+    build:
+      context: './docker/php/'
+    volumes:
+      - ./:/var/www/app/
+      - ${SSH_DIRECTORY}:/root/ssh
+    command: sh -c "
+      cd /var/www/app && cp -R /root/ssh /root/.ssh && chown -R root:root /root/.ssh && chmod -R 400 /root/.ssh && ssh-keyscan bitbucket.org >> /root/.ssh/known_hosts
+        ssh-keygen -R bitbucket.org &&
+        composer install --no-interaction &&
+        php artisan key:generate &&
+        php artisan config:clear &&
+        php artisan cache:clear &&
+        chmod 777 -R storage bootstrap &&
+        ./wait-for-mysql.sh &&
+        php artisan migrate --force &&
+        php-fpm"
+  nginx:
+    container_name: nginx
+    image: nginx:alpine
+    depends_on:
+      - php
+    ports:
+      - "80:80"
+    volumes:
+      - ./:/var/www/app/
+      - ./docker/nginx/sites/:/etc/nginx/conf.d
+  mysql:
+    image: mariadb:10.9.4
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_USER=laravel
+      - MYSQL_PASSWORD=laravel
+      - MYSQL_DATABASE=laravel
+    volumes:
+      - ./:/var/www/app/
+      - ./docker/mysql/data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    ports:
+      - 8081:80
+    environment:
+      - PMA_HOST=mysql
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_USER_NAME=root
+  redis:
+    build:
+      context: ./docker/redis
+networks:
+  default:
+    driver: bridge
