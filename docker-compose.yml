@@ -11,6 +11,7 @@ services:
     command: sh -c "
       cd /var/www/app && cp -R /root/ssh /root/.ssh && chown -R root:root /root/.ssh && chmod -R 400 /root/.ssh && ssh-keyscan bitbucket.org >> /root/.ssh/known_hosts
         ssh-keygen -R bitbucket.org &&
+        composer config --no-plugins allow-plugins.php-http/discovery true &&
         composer install --no-interaction &&
         php artisan key:generate &&
         php artisan config:clear &&
