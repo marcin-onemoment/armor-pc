@@ -1,0 +1,138 @@
+/**
+*
+* RD Navbar Classic
+* =====================================================
+*/
+.rd-navbar-classic {
+
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 1px;
+		background-color: $gray-800;
+		opacity: .15;
+		z-index: 1;
+	}
+
+	// Static
+	&.rd-navbar-static {
+		background: rgba($gray-800, .65);
+
+		.rd-navbar-aside-outer,
+		.rd-navbar-main-outer {
+			padding-left: $grid-gutter-width / 2;
+			padding-right: $grid-gutter-width / 2;
+		}
+
+		.rd-navbar-aside,
+		.rd-navbar-main {
+			max-width: $rd-navbar-static-width;
+			padding-left: 15px;
+			padding-right: 15px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.rd-navbar-aside {
+			padding: 10px 0;
+		}
+
+		.rd-navbar-main {
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 32px 0;
+
+		}
+
+		// RD Navbar Brand
+		.rd-navbar-brand {
+			img {
+				max-width: 219px;
+				max-height: 200px;
+			}
+		}
+
+		.rd-navbar-main-element {
+			display: flex;
+			align-items: center;
+		}
+
+		.rd-navbar-megamenu {
+			left: 50%;
+			transform: translate3d(-50%, 30px, 0);
+		}
+
+		.rd-navbar--has-megamenu.focus > .rd-menu,
+		.rd-navbar--has-megamenu.opened > .rd-menu {
+			transform: translate3d(-50%, 0, 0);
+		}
+
+		&.rd-navbar--is-stuck,
+		&.rd-navbar--is-clone {
+			background: $gray-700;
+			border-bottom-color: nth($rd-navbar-border, 3);
+			box-shadow: 0 0 15px rgba(21, 21, 21, 0.35);
+
+			.rd-nav-link {
+				&::after {
+					bottom: -29px;
+				}
+			}
+
+			.rd-navbar-aside-outer {
+				display: none;
+			}
+
+			.rd-navbar-main {
+				padding: 17px 0;
+			}
+
+			.rd-navbar-nav-item {
+				> .rd-navbar-submenu {
+					margin-top: 17px;
+				}
+			}
+		}
+
+		.rd-navbar-nav-wrap {
+			> .rd-nav-tel {
+				display: none;
+			}
+		}
+	}
+
+	// Fixed
+	&.rd-navbar-fixed {
+		.rd-navbar-main > .rd-nav-tel {
+			display: none;
+		}
+
+		.rd-navbar-nav-wrap {
+			> .rd-nav-tel {
+				margin-left: 15px;
+			}
+		}
+	}
+}
+
+.rd-navbar-classic-wide {
+
+	&.rd-navbar-static {
+		background: rgba($gray-800, .15);
+
+		.rd-navbar-aside,
+		.rd-navbar-main {
+			max-width: 1590px;
+		}
+	}
+
+	&::before {
+		display: none;
+	}
+}

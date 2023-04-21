@@ -1,0 +1,57 @@
+/*
+* Trunk version 2.0.1
+*/
+
+// Main styles
+@import "../bootstrap/functions";
+@import "../bootstrap/variables";
+@import "../bootstrap/mixins";
+
+// Base
+@import "base/variables";
+@import "base/mixins";
+@import "base/reset";
+
+// Components
+@import "components/type-custom";
+@import "components/brand";
+@import "components/links";
+@import "components/blocks";
+@import "components/boxes";
+@import "components/groups";
+@import "components/units";
+@import "components/lists";
+@import "components/images";
+@import "components/icons";
+@import "components/tables";
+@import "components/dividers";
+@import "components/buttons";
+@import "components/forms";
+@import "components/posts";
+@import "components/quotes";
+@import "components/thumbnails";
+@import "components/breadcrumbs";
+@import "components/pagination-custom";
+@import "components/snackbars";
+@import "components/footers";
+
+// Helpers
+@import "helpers/page-layout";
+@import "helpers/text-styling";
+@import "helpers/offsets";
+@import "helpers/sections";
+@import "helpers/grid-modules";
+@import "helpers/backgrounds";
+@import "helpers/utilities-custom";
+
+// Plugins
+@import "plugins/animate";
+@import "plugins/preloader";
+@import "plugins/ui-to-top";
+@import "plugins/rd-navbar";
+@import "plugins/swiper";
+@import "plugins/google-map";
+@import "plugins/nav-custom";
+@import "plugins/card-custom";
+@import "plugins/material-parallax";
+@import "plugins/slick";
