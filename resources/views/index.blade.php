@@ -1,3 +1,9 @@
+@extends('layouts.app')
+
+@section('content')
+
+@endsection
+
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
 <head>
