@@ -14,10 +14,11 @@
                             <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span>
                             </button>
                             <!-- RD Navbar Brand-->
-                            <div class="rd-navbar-brand"><a class="brand" href="index.html"><img class="brand-logo brand-logo-dark"
-                                                                                                 src="/img/fb_baner_new.jpg"
-                                                                                                 alt=""/><img
-                                        class="brand-logo brand-logo-light" src="/img/fb_baner_new.jpg" alt=""/></a>
+                            <div class="rd-navbar-brand">
+                                <a class="brand" href="index.html">
+                                    <img class="brand-logo brand-logo-dark" src="images/fb_baner_new.jpg" alt="Logo serwisu ArmorPC"/>
+                                    <img class="brand-logo brand-logo-light" src="images/fb_baner_new.jpg" alt="Logo serwisu ArmorPC"/>
+                                </a>
                             </div>
                         </div>
                         <div class="rd-navbar-main-element">

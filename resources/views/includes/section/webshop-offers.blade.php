@@ -18,15 +18,15 @@
                         <div class="wow slideInRight">
                             <ul class="nav nav-tabs nav-tabs-modern">
                                 <li class="nav-item" role="presentation"><a class="nav-link active" href="#tabs-1-1"
-                                                                            data-bs-toggle="tab">iphone 8/10</a></li>
+                                                                            data-bs-toggle="tab">{{ __('webshop-offers.first-category') }}</a></li>
                                 <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-2"
-                                                                            data-bs-toggle="tab">Galaxy S10</a></li>
+                                                                            data-bs-toggle="tab">{{ __('webshop-offers.second-category') }}</a></li>
                                 <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-3"
-                                                                            data-bs-toggle="tab">ipad pro</a></li>
+                                                                            data-bs-toggle="tab">{{ __('webshop-offers.third-category') }}</a></li>
                                 <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-4"
-                                                                            data-bs-toggle="tab">macbook</a></li>
+                                                                            data-bs-toggle="tab">{{ __('webshop-offers.fourth-category') }}</a></li>
                             </ul>
-                            <a class="button button-lg button-primary button-tabs-modern" href="#">View more</a>
+                            <a class="button button-lg button-primary button-tabs-modern" href="#">{{ __('webshop-offers.cta-btn') }}</a>
                         </div>
                     </div>
                     <div class="col-lg-8 col-xl-9 order-lg-1 wow-outer">

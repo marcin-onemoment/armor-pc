@@ -56,7 +56,7 @@
                             <div class="col-12">
                                 <p>{{ __('footer.info') }}</p>
                                 <div class="footer-divider"></div>
-                                <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>TechDoc</span><span>.&nbsp;</span><span>All Rights Reserved.</span>
+                                <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>Armor PC</span><span>.&nbsp;</span><span>{{ __('footer.rights') }}</span>
                                 </p>
                             </div>
                         </div>
