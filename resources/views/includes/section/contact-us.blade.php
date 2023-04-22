@@ -23,6 +23,38 @@
                     {{--                        </div>--}}
                     {{--                        <button class="button button-md button-primary" type="submit">send message</button>--}}
                     {{--                    </form>--}}
+
+                    <div class="form-box">
+               
+                <input type="text" id="username" placeholder="{{ __('contact-us.form-name') }}">
+                <p class="error-text"></p>
+            </div>
+            <div class="form-box">
+                <input type="email" id="email" placeholder="{{ __('contact-us.form-email') }}">
+                <p class="error-text"></p>
+            </div>
+            <div class="form-box">
+                <input type="text" id="title" placeholder="{{ __('contact-us.form-title') }}">
+                <p class="error-text"></p>
+            </div>
+            <div class="form-box">
+                
+               <textarea id="message" placeholder="{{ __('contact-us.form-message') }}"></textarea>
+                <p class="error-text"></p>
+            </div>
+
+            <div class="control-buttons">
+                <button class="send">{{ __('contact-us.form-btn') }}</button>
+            </div>
+
+            <div class="popup">
+                <p>Formularz został poprawnie wysłany!</p>
+                <button class="close">Zamknij</button>
+            </div>
+        </form>
+    </div>
+
+
                 </div>
             </div>
         </div>

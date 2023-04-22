@@ -13,11 +13,11 @@
         <!-- RD Navbar-->
         @include('includes.section.nav')
 
+    </header>
+    
+    <main>
         <!-- Swiper-->
         @include('includes.section.header')
-    </header>
-
-    <main>
         <!-- Services-->
         @include('includes.section.services')
         
