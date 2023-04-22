@@ -23,7 +23,7 @@
 	border: $pagination-border-width solid $pagination-border-color;
 	font-size: $pagination-font-size;
 	font-weight: 500;
-	line-height: ($pagination-line-height / $pagination-font-size);
+	line-height: calc(($pagination-line-height / $pagination-font-size));
 	background-color: $pagination-bg;
 	color: $pagination-color;
 	transition: $transition-base;

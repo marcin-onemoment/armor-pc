@@ -10,8 +10,8 @@
 
 		.rd-navbar-aside-outer,
 		.rd-navbar-main-outer {
-			padding-left: $grid-gutter-width / 2;
-			padding-right: $grid-gutter-width / 2;
+			padding-left: calc($grid-gutter-width / 2);
+			padding-right: calc($grid-gutter-width / 2);
 		}
 
 		.rd-navbar-aside,

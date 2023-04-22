@@ -73,9 +73,9 @@
 }
 
 /* Coverflow */
-.swiper-container-coverflow .swiper-wrapper {
-	/* Windows 8 IE 10 fix */
-}
+// .swiper-container-coverflow .swiper-wrapper {
+// 	/* Windows 8 IE 10 fix */
+// }
 
 // Swiper fade effect
 //
@@ -193,9 +193,7 @@
 }
 
 .swiper-slider.swiper-container-rtl {
-	.swiper-wrapper {
-
-	}
+	
 	.swiper-button-prev {
 		&::before {
 			content: "\f061";
@@ -304,7 +302,7 @@
 }
 
 .swiper-slider-1 {
-	min-height: (770 / 1920) * 100vw;
+	min-height: calc(770 / 1920) * 100vw;
 	@include media-breakpoint-up(lg) {
 		min-height: 100vh;
 	}

@@ -153,9 +153,9 @@ $font-weight-base: 300;
 $font-weight-bold: 700;
 
 // ** < Calculated font values >
-$line-height-base: ($_lh-base / $font-size-body);
-$line-height-lg: ($_lh-lg / $font-size-lg);
-$line-height-sm: ($_lh-sm / $font-size-sm);
+$line-height-base: calc(($_lh-base / $font-size-body));
+$line-height-lg: calc(($_lh-lg / $font-size-lg));
+$line-height-sm: calc(($_lh-sm / $font-size-sm));
 // ** </ Calculated font values >
 
 // Headings
@@ -187,12 +187,12 @@ $h4-font-size: $_h4-fsz * 1px;
 $h5-font-size: $_h5-fsz * 1px;
 $h6-font-size: $_h6-fsz * 1px;
 
-$h1-line-height: ($_h1-lh / $_h1-fsz);
-$h2-line-height: ($_h2-lh / $_h2-fsz);
-$h3-line-height: ($_h3-lh / $_h3-fsz);
-$h4-line-height: ($_h4-lh / $_h4-fsz);
-$h5-line-height: ($_h5-lh / $_h5-fsz);
-$h6-line-height: ($_h6-lh / $_h6-fsz);
+$h1-line-height: calc(($_h1-lh / $_h1-fsz));
+$h2-line-height: calc(($_h2-lh / $_h2-fsz));
+$h3-line-height: calc(($_h3-lh / $_h3-fsz));
+$h4-line-height: calc(($_h4-lh / $_h4-fsz));
+$h5-line-height: calc(($_h5-lh / $_h5-fsz));
+$h6-line-height: calc(($_h6-lh / $_h6-fsz));
 // ** </ Calculated Headings values >
 
 // Icon Fonts
@@ -289,7 +289,7 @@ $grid-gutter-width: 30px;
 $grid-gutter-width-narrow: 30px;
 
 // Container padding
-$container-padding-x: $grid-gutter-width / 2;
+$container-padding-x: calc($grid-gutter-width / 2);
 
 // Smooth scroll
 $enable-smooth-scroll: false;
@@ -352,11 +352,11 @@ $form-input-border: 1px solid $form-input-border-color;
 $form-input-padding-horizontal: 25px;
 $form-input-line-height: round($form-input-font-size * 1.7);
 
-$form-input-padding-vertical: round(($form-input-height - $form-input-line-height) / 2) + 1px;
+$form-input-padding-vertical: round(calc(($form-input-height - $form-input-line-height) / 2)) + 1px;
 $form-input-padding: $form-input-padding-vertical $form-input-padding-horizontal;
 
 @if ($form-input-border != none) {
-	$form-input-padding-vertical: round(($form-input-height - $form-input-line-height - (nth($form-input-border, 1) * 2)) / 2);
+	$form-input-padding-vertical: round(calc(($form-input-height - $form-input-line-height - (nth($form-input-border, 1) * 2)) / 2));
 	$form-input-padding: $form-input-padding-vertical $form-input-padding-horizontal;
 }
 

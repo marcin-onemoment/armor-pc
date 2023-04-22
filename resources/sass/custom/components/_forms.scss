@@ -106,7 +106,7 @@ textarea.form-input {
 
 .form-label {
 	position: absolute;
-	top: $form-input-height / 2;
+	top: calc($form-input-height / 2);
 	left: 0;
 	right: 0;
 	padding-left: $form-input-padding-horizontal;
@@ -462,7 +462,7 @@ textarea.form-input {
 	}
 
 	.form-label {
-		top: $form-input-sm-height / 2;
+		top: calc($form-input-sm-height / 2);
 	}
 
 	* + .button {
@@ -483,8 +483,8 @@ textarea.form-input {
 	.form-input,
 	.select2-container .select2-choice {
 		font-size: 16px;
-		padding-top: round(($form-input-lg-height - $form-input-line-height) / 2) - 1px;
-		padding-bottom: round(($form-input-lg-height - $form-input-line-height) / 2) - 1px;
+		padding-top: round(calc(($form-input-lg-height - $form-input-line-height) / 2)) - 1px;
+		padding-bottom: round(calc(($form-input-lg-height - $form-input-line-height) / 2)) - 1px;
 	}
 
 	.form-input,
@@ -497,7 +497,7 @@ textarea.form-input {
 	}
 
 	.form-label {
-		top: round($form-input-lg-height / 2);
+		top: round(calc($form-input-lg-height / 2));
 	}
 }
 
