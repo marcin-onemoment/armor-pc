@@ -110,6 +110,9 @@
 		}
 	});
 
+
+
+
 	// Initialize scripts that require a finished document
 	$(function () {
 		isNoviBuilder = window.xMode;
@@ -950,3 +953,5 @@
 
 	});
 }());
+
+

@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     'title' => 'Skontaktuj się z Nami',
     'form-name' => 'Imię',
     'form-email' => 'Email',

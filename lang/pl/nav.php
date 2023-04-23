@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     'item1' => 'Usługi',
     'item2' => 'Naprawa',
     'item3' => 'Oferta',

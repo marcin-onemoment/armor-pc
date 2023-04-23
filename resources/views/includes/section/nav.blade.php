@@ -16,8 +16,8 @@
                             <!-- RD Navbar Brand-->
                             <div class="rd-navbar-brand">
                                 <a class="brand" href="index.html">
-                                    <img class="brand-logo brand-logo-dark" src="images/fb_baner_new.jpg" alt="Logo serwisu ArmorPC"/>
-                                    <img class="brand-logo brand-logo-light" src="images/fb_baner_new.jpg" alt="Logo serwisu ArmorPC"/>
+                                    <img class="brand-logo brand-logo-dark" src="images/fb_baner.jpg" alt="Logo serwisu ArmorPC"/>
+                                    <img class="brand-logo brand-logo-light" src="images/fb_baner.jpg" alt="Logo serwisu ArmorPC"/>
                                 </a>
                             </div>
                         </div>

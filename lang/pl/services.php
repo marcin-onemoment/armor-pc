@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     'first-service' => 'Naprawa laptopów',
     'first-service-info' => 'Oferujemy naprawę wszystkich marek i modeli laptopów dla klientów indywidualnych oraz firm.',
     'second-service' => 'Naprawa smartfonów',

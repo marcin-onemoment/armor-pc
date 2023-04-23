@@ -1,7 +1,6 @@
 require('./bootstrap');
 
-
-$('.team-carousel').slick({
+$('.hero-carousel').slick({
 	arrows: false,
 	mobileFirst: true,
 	autoplay: false,

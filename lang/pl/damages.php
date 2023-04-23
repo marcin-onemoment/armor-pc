@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     'question' => 'Jakie problemy potrafimy rozwiązać?',
     'description' => 'Od naprawy ekranu do wymiany baterii. Nasz zespół wykwalifikowanych serwisantów pomoże znaleźć odpowiednie rozwiązanie dla każdego problemu, niezależnie od urządzenia.',
     'damage1' => 'Zalany telefon',

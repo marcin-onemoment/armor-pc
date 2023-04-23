@@ -20,7 +20,7 @@
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
             </div>
-                <div class="carousel-inner">
+                <div class="carousel-inner hero-carousel">
                     <div class="carousel-item active">
                         <div class="main-bunner-img" style="background-image: url('images/bg-bunner-1.jpg'); background-size: cover;"></div>
                         <div class="main-bunner-inner">
@@ -61,3 +61,4 @@
         </div>
     </div>
 </section>
+

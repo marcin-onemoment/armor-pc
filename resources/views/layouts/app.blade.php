@@ -15,7 +15,7 @@
           <script src="https://kit.fontawesome.com/a924c70fc6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ asset('css/fonts.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/new.css') }}">
 </head>
 <body>
     <div id="app">

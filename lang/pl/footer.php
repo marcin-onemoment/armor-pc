@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     'sub' => 'subskrybuj i bądź na bieżąco!',
     'contact' => 'telefon i adres',
     'address' => 'Kościuszki 00/x 00-000 Ostrów Wielkopolski',
