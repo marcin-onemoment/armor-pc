@@ -749,7 +749,7 @@
 		height: 100%;
 		max-width: 420px;
 		max-height: 250px;
-		background: url('../images/bg-dot.png');
+		// background: url('../images/bg-dot.png');
 		transform: translate(-50%, -50%);
 		opacity: .15;
 		z-index: 0;
@@ -1291,7 +1291,7 @@
 		@include media-breakpoint-up(xl) {
 			&:before {
 				position: absolute;
-				content: url("../images/sponsor-img-hover.png");
+				// content: url("../images/sponsor-img-hover.png");
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%, -50%);
@@ -1396,7 +1396,7 @@
 		text-transform: uppercase;
 		letter-spacing: .05em;
 		opacity: .8;
-		background: url('../images/bg-brush.png') center no-repeat;
+		// background: url('../images/bg-brush.png') center no-repeat;
 
 		h4 {
 			font-weight: 800;

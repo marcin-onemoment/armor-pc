@@ -545,7 +545,7 @@ $tabs-corporate-border: #e5e7e9;
 			top: 0;
 			width: 240px;
 			height: 100px;
-			background: url('../images/bg-dot.png');
+			// background: url('../images/bg-dot.png');
 			opacity: .2;
 		}
 		.title-decorate {
@@ -586,7 +586,7 @@ $tabs-corporate-border: #e5e7e9;
 
 		&:before {
 			position: absolute;
-			content: url('../images/bg-tab.png');
+			// content: url('../images/bg-tab.png');
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);

@@ -12,7 +12,6 @@
     <header class="section page-header">
         <!-- RD Navbar-->
         @include('includes.section.nav')
-
     </header>
     
     <main>

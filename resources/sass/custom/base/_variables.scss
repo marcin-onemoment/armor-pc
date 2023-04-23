@@ -38,7 +38,7 @@ $gray-300: #E7E7E7;
 $gray-400: #C4C4C4;
 $gray-500: #9b9b9b;
 $gray-600: #3C3C3C;
-$gray-700: #475053;
+$gray-700: #534747;
 $gray-800: #151515;
 $gray-900: #111111;
 $black:    #000000;
@@ -58,6 +58,12 @@ $theme-colors: ();
 $primary:     #2E94B9; //
 $secondary:   #303A54; //
 $secondary2:   #21BA5E; //
+
+// Figma
+$main-color: #2E94B9;
+$dark-gray: #475053;
+$light-gray: #F5F5F5;
+
 
 $gradient-1: linear-gradient(228.54deg, $primary 30.16%, $secondary 89.45%);
 $gradient-1-reverse: linear-gradient(-228.54deg, $primary 30.16%, $secondary 89.45%);
@@ -102,7 +108,7 @@ $theme-colors: map-merge(
 //
 $page-boxed-width: 1600px;
 $page-boxed-background-color: $gray-100;
-$page-boxed-background-image: url(../images/bg-pattern-boxed.png);
+// $page-boxed-background-image: url(../images/bg-pattern-boxed.png);
 
 //
 // Components

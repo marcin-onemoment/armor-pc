@@ -48,9 +48,9 @@
                     <div class="wow slideInLeft">
                         <div class="row row-30">
                             <div class="col-12"><a class="brand" href="index.html"><img class="brand-logo-dark"
-                                                                                        src="{{ asset('images/logo-default-438x92.png') }}"
+                                                                                        src="{{ asset('images/fb_baner.jpg') }}"
                                                                                         alt="" width="219" height="46"/><img
-                                        class="brand-logo-light" src="images/logo-inverse-438x92.png" alt="" width="219"
+                                        class="brand-logo-light" src="images/fb_baner.jpg" alt="" width="219"
                                         height="46"/></a>
                             </div>
                             <div class="col-12">
