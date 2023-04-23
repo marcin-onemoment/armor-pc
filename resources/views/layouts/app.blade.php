@@ -18,16 +18,17 @@
     <link rel="stylesheet" href="{{ asset('css/new.css') }}">
 </head>
 <body>
-    <div id="app">
-        <main>
-            @yield('content')
-        </main>
-    </div>
+<div id="app">
+    <main>
+        @yield('content')
+    </main>
+</div>
 
 
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script src="{{ asset('js/core.min.js') }}"></script>
-<script src="{{ asset('js/script.js') }}"></script>
+    <script src="{{ asset('js/script.js') }}"></script>
+    <script src="{{ asset('js/carousel.js') }}"></script>
 </body>
 </html>
