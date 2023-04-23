@@ -3,6 +3,6 @@
         <div class="cssload-container">
             <div class="cssload-speeding-wheel"></div>
         </div>
-        <p>Loading...</p>
+        <p>{{ __('preloader.loading') }}</p>
     </div>
 </div>

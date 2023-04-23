@@ -1,5 +1,6 @@
 require('./bootstrap');
 
+
 $('.team-carousel').slick({
 	arrows: false,
 	mobileFirst: true,
