@@ -3,7 +3,7 @@ require('./bootstrap');
 $('.hero-carousel').slick({
 	arrows: false,
 	mobileFirst: true,
-	autoplay: false,
+	autoplay: true,
 	slidesToShow: 1,
 	slidesToScroll: 1,
 })
