@@ -12,23 +12,23 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css"
           href="//fonts.googleapis.com/css?family=Lato:100,300,400,400i,700,900%7CRoboto:400">
-          <script src="https://kit.fontawesome.com/a924c70fc6.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a924c70fc6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ asset('css/fonts.css') }}">
     <link rel="stylesheet" href="{{ asset('css/new.css') }}">
 </head>
 <body>
-    <div id="app">
-        <main>
-            @yield('content')
-        </main>
-    </div>
+<div id="app">
+    <main>
+        @yield('content')
+    </main>
+</div>
 
 
-    <script type="text/javascript" src="{url('cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js')}"></script>
-				
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     <script src="{{ asset('js/core.min.js') }}"></script>
-<script src="{{ asset('js/script.js') }}"></script>
-<script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/script.js') }}"></script>
+    <script src="{{ asset('js/carousel.js') }}"></script>
 </body>
 </html>
