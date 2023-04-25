@@ -1389,7 +1389,7 @@ a[href*=mailto] {
 @media (min-width: 992px) {
   .testimonials-modern {
     width: 650px;
-    padding: 35px 0 55px;
+    padding: 35px 0 35px;
   }
 }
 
@@ -3712,131 +3712,99 @@ textarea.form-input {
   transition: 0.22s;
 }
 
-.rd-form-inline {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
+form {
+  padding: 40px;
+  font-size: 20px;
+}
+
+form h1 {
+  margin-bottom: 30px;
   text-align: center;
-  margin-left: -11px;
-  margin-right: -11px;
 }
 
-.rd-form-inline > * {
-  margin-top: 22px;
-  padding-left: 11px;
-  padding-right: 11px;
+form .form-box {
+  margin-bottom: 15px;
 }
 
-.rd-form-inline > * {
-  margin-top: 0;
-  margin-bottom: 20px;
+form .form-box label {
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
-@media (min-width: 992px) {
-  .rd-form-inline > * {
-    margin-top: 0;
-  }
+form .form-box input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 5px;
 }
 
-.rd-form-inline .form-label {
-  justify-content: flex-start;
-  padding-left: 36px;
+form .form-box .error-text {
+  margin: 5px 0 0 10px;
+  font-size: 14px;
+  color: rgb(0, 137, 250);
+  visibility: hidden;
 }
 
-.rd-form-inline .form-wrap {
-  flex: auto;
-  min-width: 185px;
-  flex: 1;
+form .form-box.error input {
+  border: 1px solid rgb(0, 137, 250);
+  background-color: rgba(0, 137, 250, 0.1);
 }
 
-@media (max-width: 575.98px) {
-  .rd-form-inline .form-wrap {
-    width: 100%;
-  }
+form .form-box.error .error-text {
+  visibility: visible;
 }
 
-.rd-form-inline .form-wrap-select {
-  text-align: left;
-}
-
-.rd-form-inline .form-button {
-  flex-shrink: 0;
-  max-width: calc(100% - 10px);
-  min-height: 60px;
-}
-
-@media (max-width: 575.98px) {
-  .rd-form-inline .form-button {
-    max-width: inherit;
-    width: 100%;
-  }
-
-  .rd-form-inline .form-button .button {
-    width: 100%;
-  }
-}
-
-.rd-form-inline .form-button .button {
-  min-height: inherit;
-}
-
-@media (min-width: 576px) {
-  .rd-form-inline .button {
-    display: block;
-  }
-}
-
-.rd-form-inline.rd-form-inline-centered {
+form .control-buttons {
+  display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.form-sm .form-input,
-.form-sm .button {
-  padding-top: 9px;
-  padding-bottom: 9px;
-  min-height: 50px;
+form .send {
+  display: block;
+  padding: 10px 0;
+  width: 200px;
+  font-size: 18px;
+  background-color: #2E94B9;
+  color: #fff;
+  border: none;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: backgroung-color 0.3s;
 }
 
-.form-sm .form-validation {
-  top: -16px;
+form .send:hover {
+  background-color: #475053;
 }
 
-.form-sm .form-label {
-  top: 25px;
+form .popup {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: -300px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 2px solid black;
+  transition: top 0.5s;
 }
 
-.form-sm * + .button {
-  margin-top: 10px;
+form .popup p {
+  font-size: 28px;
 }
 
-.form-lg .form-input,
-.form-lg .form-label,
-.form-lg .select2-container .select2-choice {
-  font-size: 16px;
+form .popup .close {
+  margin-top: 20px;
 }
 
-.form-lg .form-input,
-.form-lg .select2-container .select2-choice {
-  font-size: 16px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
-.form-lg .form-input,
-.form-lg .select2-container .select2-choice {
-  min-height: 58px;
-}
-
-.form-lg .form-button {
-  min-height: 60px;
-}
-
-.form-lg .form-label {
-  top: 30px;
-}
-
-.bg-default .form-input {
-  background: #DADADC;
+form .show-popup {
+  top: 100px;
 }
 
 /*
@@ -5668,13 +5636,17 @@ html [class*=section-].section-bottom-0 {
   overflow: hidden;
   padding: 80px 0 70px;
   background-color: #ffffff;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-image: url("/images/bg-bunner-1.jpg");
 }
 
 @media (min-width: 992px) {
   .section-main-bunner {
     min-height: 700px;
-    height: 100vh;
     display: flex;
+    height: 100vh;
     align-items: center;
     justify-content: center;
     padding: 120px 0 100px;

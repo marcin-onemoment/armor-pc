@@ -101,22 +101,84 @@
 // 	slidesToScroll: 1,
 // })
 
-var $carousel = $(".slick-slider").slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: false,
-  arrows: false,
-  vertical: true
-});
-$("#fullpage").fullpage({
-  navigation: false,
-  onLeave: function onLeave(origin, destination, direction) {
-    if (direction == "down") {
-      $carousel.slick("slickNext");
-    } else if (direction == "up") {
-      $carousel.slick("slickPrev");
+var username = document.querySelector('#username');
+var pass = document.querySelector('#password');
+var repeatPass = document.querySelector('#repeat-password');
+var email = document.querySelector('#email');
+var clearBtn = document.querySelector('.clear');
+var sendBtn = document.querySelector('.send');
+var cancelBtn = document.querySelector('.cancel');
+var popup = document.querySelector('.popup');
+var showError = function showError(input, msg) {
+  var formBox = input.parentElement;
+  var errorMsg = formBox.querySelector('.error-text');
+  formBox.classList.add('error');
+  errorMsg.textContent = msg;
+};
+var clearError = function clearError(input) {
+  var formBox = input.parentElement;
+  formBox.classList.remove('error');
+};
+var checkForm = function checkForm(input) {
+  input.forEach(function (el) {
+    if (el.value === '') {
+      showError(el, el.placeholder);
+    } else {
+      clearError(el);
     }
+  });
+};
+var checkLength = function checkLength(input, min) {
+  if (input.value.length < min & input.value !== '') {
+    showError(input, "".concat(input.previousElementSibling.innerText.slice(0, -1), " sk\u0142ada sie z min. ").concat(min, " znak\xF3w."));
   }
+};
+var comparePassword = function comparePassword(pass1, pass2) {
+  if (pass1.value !== pass2.value) {
+    showError(pass2, 'Hasła nie są takie same');
+  }
+};
+var checkMail = function checkMail(email) {
+  var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  if (re.test(email.value)) {
+    clearError(email);
+  } else {
+    showError(email, 'E-mail jest niepoprawny');
+  }
+};
+var checkErrors = function checkErrors() {
+  var allInputs = document.querySelectorAll('.form-box');
+  var countError = 0;
+  allInputs.forEach(function (el) {
+    if (el.classList.contains('error')) {
+      countError++;
+    }
+  });
+  if (countError === 0) {
+    popup.classList.add('show-popup');
+  }
+};
+
+//AddEventListener on the buttons
+
+//Send button
+sendBtn.addEventListener('click', function (e) {
+  e.preventDefault();
+  checkForm([username, pass, repeatPass, email]);
+  checkLength(username, 3);
+  checkLength(pass, 8);
+  comparePassword(pass, repeatPass);
+  checkMail(email);
+  checkErrors();
+});
+
+//ClearButton
+clearBtn.addEventListener('click', function (e) {
+  e.preventDefault();
+  [username, pass, repeatPass, email].forEach(function (el) {
+    el.value = '';
+    clearError(el);
+  });
 });
 
 /***/ }),
