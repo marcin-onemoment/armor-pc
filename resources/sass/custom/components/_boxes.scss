@@ -377,34 +377,21 @@
 	max-width: 390px;
 	margin-left: auto;
 	margin-right: auto;
-	transition: all .3s;
+	overflow: hidden;
 	> * {
 		position: relative;
 		z-index: 1;
 	}
-
-	&:hover {
-		box-shadow: 0 8px 20px rgba($black, 0.25);
-		z-index: 2;
-
-		.team-classic-caption {
-			padding-bottom: 42px;
-			margin-bottom: -12px;
-		}
-		.team-classic-caption h4 :hover{
-					 color:$primary;
-				 }
-
-		.team-classic-soc-list {
-			opacity: 1;
-			transform: translateY(-50%);
-		}
-	}
+	
 }
 
 .team-classic-figure {
 	position: relative;
-
+	transition: transform .3s;
+	
+	&:hover {
+		transform: scale(1.05);
+	}
 	.team-classic-soc-list {
 		text-align: center;
 		position: absolute;

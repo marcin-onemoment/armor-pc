@@ -304,6 +304,7 @@ h6,
 .sub-title {
   letter-spacing: -0.03em;
   font-weight: 400;
+  font-size: 20px;
 }
 
 .sub-title-2 {
@@ -1018,7 +1019,7 @@ a[href*=mailto] {
   max-width: 390px;
   margin-left: auto;
   margin-right: auto;
-  transition: all 0.3s;
+  overflow: hidden;
 }
 
 .team-classic > * {
@@ -1026,27 +1027,13 @@ a[href*=mailto] {
   z-index: 1;
 }
 
-.team-classic:hover {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-  z-index: 2;
-}
-
-.team-classic:hover .team-classic-caption {
-  padding-bottom: 42px;
-  margin-bottom: -12px;
-}
-
-.team-classic:hover .team-classic-caption h4 :hover {
-  color: #2E94B9;
-}
-
-.team-classic:hover .team-classic-soc-list {
-  opacity: 1;
-  transform: translateY(-50%);
-}
-
 .team-classic-figure {
   position: relative;
+  transition: transform 0.3s;
+}
+
+.team-classic-figure:hover {
+  transform: scale(1.05);
 }
 
 .team-classic-figure .team-classic-soc-list {
@@ -2855,12 +2842,12 @@ hr {
 .button-primary:hover,
 .button-primary:active {
   color: #ffffff;
-  background-color: #151515;
-  border-color: #151515;
+  background-color: #475053;
+  border-color: #475053;
 }
 
 .button-primary.button-ujarak::before {
-  background: #151515;
+  background: #475053;
 }
 
 .button-secondary,

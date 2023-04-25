@@ -32,8 +32,6 @@
         <!-- Testimonials-->
         @include('includes.section.reviews')
         
-        <!-- Officially Authorized Repair Center-->
-        @include('includes.section.brands')
         
         <!-- Maps-->
         @include('includes.section.maps')
