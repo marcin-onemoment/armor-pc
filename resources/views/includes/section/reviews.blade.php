@@ -41,26 +41,6 @@
                         <h4 class="testimonials-modern-name">Anna Kowalska</h4>
                     </div>
                 </div>
-            </div>
-            <div class="slick-slider slider-dots" id="child-carousel" data-for=".carousel-parent" data-arrows="false"
-                 data-dots="false" data-swipe="true" data-items="4" data-xs-items="4" data-sm-items="4"
-                 data-md-items="4" data-lg-items="4" data-xl-items="4" data-slide-to-scroll="1">
-                <div class="item">
-                    <div class="slick-dot-item"><img src="{{ asset('images/user-1-60x60.jpg') }}" alt="" width="60" height="60"/>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="slick-dot-item"><img src="images/user-2-60x60.jpg" alt="" width="60" height="60"/>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="slick-dot-item"><img src="images/user-3-60x60.jpg" alt="" width="60" height="60"/>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="slick-dot-item"><img src="images/user-4-60x60.jpg" alt="" width="60" height="60"/>
-                    </div>
-                </div>
-            </div>
+</div>
         </div>
     </section>
