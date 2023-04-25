@@ -1030,6 +1030,15 @@ a[href*=mailto] {
 .team-classic-figure {
   position: relative;
   transition: transform 0.3s;
+  height: 252px;
+  width: 391px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.team-classic-figure img {
+  height: 100%;
+  width: 100%;
 }
 
 .team-classic-figure:hover {
@@ -1063,6 +1072,7 @@ a[href*=mailto] {
   padding: 19px 25px 30px;
   transition: all 0.5s;
   background: #ffffff;
+  height: 120px;
 }
 
 .team-classic-caption p {
@@ -1074,9 +1084,16 @@ a[href*=mailto] {
   text-transform: uppercase;
 }
 
-.team-name {
-  line-height: 35px;
+.team-classic-caption .team-name {
+  line-height: 80px;
   letter-spacing: -0.02em;
+  color: #000;
+}
+
+.team-classic-caption .team-name-long {
+  line-height: 40px;
+  letter-spacing: -0.02em;
+  color: #000;
 }
 
 .team-modern {

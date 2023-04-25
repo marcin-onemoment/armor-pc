@@ -388,6 +388,14 @@
 .team-classic-figure {
 	position: relative;
 	transition: transform .3s;
+	height: 252px;
+	width: 391px;
+	object-fit: contain;
+
+	img{
+		height: 100%;
+		width: 100%;
+	}
 	
 	&:hover {
 		transform: scale(1.05);
@@ -420,6 +428,7 @@
 	padding: 19px 25px 30px;
 	transition: all .5s;
 	background: $white;
+	height: 120px;
 	
 	p {
 		margin-top: 9px;
@@ -429,12 +438,19 @@
 		letter-spacing: 0.05em;
 		text-transform: uppercase;
 	}
+	.team-name {
+		line-height: 80px;
+		letter-spacing: -0.02em;
+		color: #000;
+	}
+
+	.team-name-long{
+		line-height: 40px;
+		letter-spacing: -0.02em;
+		color: #000;
+	}
 }
 
-.team-name {
-	line-height: 35px;
-	letter-spacing: -0.02em;
-}
 
 //team modern
 .team-modern {

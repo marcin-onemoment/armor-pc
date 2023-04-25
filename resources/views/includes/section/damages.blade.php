@@ -15,63 +15,57 @@
             <div class="row g-0">
                 <div class="col-md-6 col-lg-4">
                     <div class="team-classic">
-                        <div class="team-classic-figure"><img src="images/team-classic-1-391x252.jpg" alt="" width="391"
-                                                              height="252"/>
+                        <div class="team-classic-figure"><img src="/images/damage1.jpg" alt="Kobieta siedząca przed niedziałającym laptopem" />
                         </div>
                         <div class="team-classic-caption">
-                            <h4><a class="team-name" href="#">{{ __('damages.damage1') }}</a></h4>
+                            <h4 class="team-name">{{ __('damages.damage1') }}</h4>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="team-classic">
-                        <div class="team-classic-figure"><img src="images/team-classic-2-391x252.jpg" alt="" width="391"
-                                                              height="252"/>
+                        <div class="team-classic-figure"><img src="/images/damage2.jpg" alt=""/>
                         </div>
                         <div class="team-classic-caption">
-                            <h4><a class="team-name" href="#">{{ __('damages.damage2') }}</a></h4>
+                            <h4 class="team-name">{{ __('damages.damage2') }}</h4>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="team-classic">
-                        <div class="team-classic-figure"><img src="images/team-classic-3-391x252.jpg" alt="" width="391"
-                                                              height="252"/>
+                        <div class="team-classic-figure"><img src="/images/damage3_big.jpg" alt=""/>
                         </div>
                         <div class="team-classic-caption">
-                            <h4><a class="team-name" href="#">{{ __('damages.damage3') }}</a></h4>
+                            <h4 class="team-name">{{ __('damages.damage3') }}</h4>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="team-classic">
-                        <div class="team-classic-figure"><img src="images/team-classic-4-391x252.jpg" alt="" width="391"
-                                                              height="252"/>
+                        <div class="team-classic-figure"><img src="/images/damage4_big.jpg" alt=""/>
                         </div>
                         <div class="team-classic-caption">
-                            <h4><a class="team-name" href="#">{{ __('damages.damage4') }}</a></h4>
+                            <h4 class="team-name">{{ __('damages.damage4') }}</h4>
 
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="team-classic">
-                        <div class="team-classic-figure"><img src="images/team-classic-5-391x252.jpg" alt="" width="391"
-                                                              height="252"/>
+                        <div class="team-classic-figure"><img src="/images/damage5_big.jpg" alt=""/>
                         </div>
                         <div class="team-classic-caption">
-                            <h4><a class="team-name" href="#">{{ __('damages.damage5') }}</a></h4>
+                            <h4 class="team-name">{{ __('damages.damage5') }}</h4>
 
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="team-classic">
-                        <div class="team-classic-figure"><img src="images/team-classic-6-391x252.jpg" alt="" width="391"
-                                                              height="252"/>
+                        <div class="team-classic-figure"><img src="/images/damage6_big.jpg" alt=""/>
                         </div>
                         <div class="team-classic-caption">
-                            <h4><a class="team-name" href="#">{{ __('damages.damage6') }}</a></h4>
+                            <h4 class="team-name-long">{{ __('damages.damage6') }}</h4>
 
                         </div>
                     </div>
