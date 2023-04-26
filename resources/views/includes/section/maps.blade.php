@@ -19,7 +19,7 @@
                                 class="text-secondary linearicons-phone-incoming icon-lg"></span></div>
                         <div class="box-icon-caption">
                             <h4><a href="tel:#">{{ __('maps.mobile') }}</a></h4>
-                           
+
                         </div>
                     </div>
                 </div>
@@ -38,7 +38,7 @@
                                 class="text-secondary linearicons-paper-plane icon-lg"></span></div>
                         <div class="box-icon-caption">
                             <h4><a href="mailto:#">{{ __('maps.email') }}</a></h4>
-    
+
                         </div>
                     </div>
                 </div>

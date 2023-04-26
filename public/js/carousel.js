@@ -212,9 +212,9 @@ clearBtn.addEventListener('click', function (e) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/michal/Pulpit/Projekty/armor-pc/resources/js/carousel.js */"./resources/js/carousel.js");
-__webpack_require__(/*! /home/michal/Pulpit/Projekty/armor-pc/resources/sass/app.scss */"./resources/sass/app.scss");
-module.exports = __webpack_require__(/*! /home/michal/Pulpit/Projekty/armor-pc/resources/sass/custom/style.scss */"./resources/sass/custom/style.scss");
+__webpack_require__(/*! /home/marcin/projects/one-moment/armor-pc/resources/js/carousel.js */"./resources/js/carousel.js");
+__webpack_require__(/*! /home/marcin/projects/one-moment/armor-pc/resources/sass/app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! /home/marcin/projects/one-moment/armor-pc/resources/sass/custom/style.scss */"./resources/sass/custom/style.scss");
 
 
 /***/ })
