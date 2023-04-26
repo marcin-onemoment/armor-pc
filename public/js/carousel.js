@@ -93,13 +93,13 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-// $('.hero-carousel').slick({
-// 	arrows: false,
-// 	mobileFirst: true,
-// 	autoplay: false,
-// 	slidesToShow: 1,
-// 	slidesToScroll: 1,
-// })
+$('.carousel-inner').slick({
+  arrows: false,
+  mobileFirst: true,
+  autoplay: false,
+  slidesToShow: 1,
+  slidesToScroll: 1
+});
 
 /***/ }),
 
