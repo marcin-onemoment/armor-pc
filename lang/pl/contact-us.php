@@ -2,10 +2,10 @@
 
 return [
     'title' => 'Skontaktuj się z Nami',
-    'form-name' => 'Imię',
-    'form-email' => 'Email',
-    'form-title' => 'Tytuł',
-    'form-message' => 'Wiadomość',
+    'form-name' => 'Podaj nazwę użytkownika',
+    'form-email' => 'Podaj adres e-mail',
+    'form-title' => 'Wpisz tytuł wiadomości',
+    'form-message' => 'Wpisz treść wiadomości',
     'form-btn' => 'Wyślij wiadomość'
     
     ];

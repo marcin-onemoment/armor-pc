@@ -3713,7 +3713,7 @@ textarea.form-input {
 }
 
 form {
-  padding: 40px;
+  padding: 50px;
   font-size: 20px;
 }
 
@@ -3723,15 +3723,16 @@ form h1 {
 }
 
 form .form-box {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 form .form-box label {
   display: inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 10 px;
 }
 
-form .form-box input {
+form .form-box input,
+form .form-box textarea {
   width: 100%;
   padding: 10px;
   font-size: 16px;
@@ -3742,12 +3743,13 @@ form .form-box input {
 form .form-box .error-text {
   margin: 5px 0 0 10px;
   font-size: 14px;
-  color: rgb(0, 137, 250);
+  color: #2E94B9;
   visibility: hidden;
 }
 
-form .form-box.error input {
-  border: 1px solid rgb(0, 137, 250);
+form .form-box.error input,
+form .form-box.error textarea {
+  border: 1px solid #2E94B9;
   background-color: rgba(0, 137, 250, 0.1);
 }
 
@@ -3755,7 +3757,7 @@ form .form-box.error .error-text {
   visibility: visible;
 }
 
-form .control-buttons {
+form .control-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3763,13 +3765,13 @@ form .control-buttons {
 
 form .send {
   display: block;
-  padding: 10px 0;
+  padding: 20px 0;
   width: 200px;
   font-size: 18px;
   background-color: #2E94B9;
   color: #fff;
   border: none;
-  border-radius: 18px;
+  border-radius: 30px;
   cursor: pointer;
   transition: backgroung-color 0.3s;
 }
@@ -3778,33 +3780,20 @@ form .send:hover {
   background-color: #475053;
 }
 
-form .popup {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  top: -300px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 600px;
-  height: 150px;
-  background-color: #fff;
-  border-radius: 8px;
-  border: 2px solid black;
-  transition: top 0.5s;
+form .info {
+  visibility: hidden;
+  margin-top: 50px;
+  transition: visibility 0.5s;
 }
 
-form .popup p {
+form .info p {
   font-size: 28px;
+  text-align: center;
+  font-weight: bold;
 }
 
-form .popup .close {
-  margin-top: 20px;
-}
-
-form .show-popup {
-  top: 100px;
+form .show {
+  visibility: visible;
 }
 
 /*
@@ -5636,10 +5625,6 @@ html [class*=section-].section-bottom-0 {
   overflow: hidden;
   padding: 80px 0 70px;
   background-color: #ffffff;
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-image: url("/images/bg-bunner-1.jpg");
 }
 
 @media (min-width: 992px) {
@@ -5653,22 +5638,32 @@ html [class*=section-].section-bottom-0 {
   }
 }
 
-.section-main-bunner .main-bunner-img {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
+.section-main-bunner .carousel-inner {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
 }
 
-@media (min-width: 1200px) {
-  .section-main-bunner .main-bunner-img {
-    left: -100px;
-    right: -100px;
-    bottom: -100px;
-    top: -100px;
-    animation: bunner-img 10s infinite;
-  }
+.section-main-bunner .carousel-inner .carousel-item {
+  position: absolute;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.section-main-bunner .carousel-inner .carousel-item .container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.section-main-bunner .carousel-inner .one {
+  background-image: url("/images/bg-bunner-1.jpg");
+}
+
+.section-main-bunner .carousel-inner .two {
+  background-image: url("/images/laptop-g4eead9425_1920.jpg");
 }
 
 .section-main-bunner .main-bunner-inner {
@@ -5718,7 +5713,7 @@ html [class*=section-].section-bottom-0 {
   bottom: 0;
   right: 0;
   content: "";
-  background: linear-gradient(359.73deg, #3A092F 0.9%, rgba(60, 55, 79, 0.45) 107.43%);
+  background: linear-gradient(359.73deg, #3a092f 0.9%, rgba(60, 55, 79, 0.45) 107.43%);
   z-index: 1;
 }
 
@@ -5904,26 +5899,26 @@ html [class*=section-].section-bottom-0 {
 
 .section-special-content-social .icon.icon-blue:hover {
   color: #ffffff;
-  border-color: #135DEC;
-  background: #135DEC;
+  border-color: #135dec;
+  background: #135dec;
 }
 
 .section-special-content-social .icon.icon-blue-light:hover {
   color: #ffffff;
-  border-color: #35B7E0;
-  background: #35B7E0;
+  border-color: #35b7e0;
+  background: #35b7e0;
 }
 
 .section-special-content-social .icon.icon-pink:hover {
   color: #ffffff;
-  border-color: #FF3951;
-  background: #FF3951;
+  border-color: #ff3951;
+  background: #ff3951;
 }
 
 .section-special-content-social .icon.icon-violet:hover {
   color: #ffffff;
-  border-color: #2C3AB6;
-  background: #2C3AB6;
+  border-color: #2c3ab6;
+  background: #2c3ab6;
 }
 
 /*
