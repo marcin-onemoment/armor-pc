@@ -49,12 +49,11 @@ $rd-navbar-fixed-submenu-toggle-focus-color: $white;
 		text-overflow: ellipsis;
 		text-align: left;
 		font-size: 22px;
+		height: 58px;
+		width: 200px;
+		background-image: url('/public/images/icon_new.jpg');
+		z-index: 20;
 
-		img {
-			max-width: 160px;
-			max-height: 58px;
-			height: auto;
-		}
 	}
 
 	// RD Navbar Panel

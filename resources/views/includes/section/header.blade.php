@@ -20,19 +20,11 @@
                     <div class="col-sm-10 col-md-7 col-xl-6">
                         <h1>{{ __('header.question-second') }}</h1>
                         <h4 class="text-opacity-80 fw-normal">{{ __('header.description-second') }}</h4>
-                        <a class="button button-primary" href="#pricing">{{ __('header.cta-btn') }}</a>
+                        <a class="button button-primary" href="{{ asset('#pricing') }}">{{ __('header.cta-btn') }}</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
     </div>
 </section>

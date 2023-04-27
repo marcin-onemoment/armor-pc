@@ -15,7 +15,7 @@
                         <div class="testimonials-modern-text">
                             <p>{{ $opinion->content }}</p>
                         </div>
-                        <h4 class="testimonials-modern-name">{{ $opinion->author }}</h4>
+                        <h4 class="testimonials-modern-name">Anna Kowalska</h4>
                     </div>
                 </div>
             @endforeach

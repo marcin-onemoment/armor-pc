@@ -6,6 +6,7 @@ return [
     'form-email' => 'Podaj adres e-mail',
     'form-title' => 'Wpisz tytuł wiadomości',
     'form-message' => 'Wpisz treść wiadomości',
-    'form-btn' => 'Wyślij wiadomość'
+    'form-btn' => 'Wyślij wiadomość',
+    'form-info' => 'Formularz został poprawnie wysłany!'
     
     ];
