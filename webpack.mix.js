@@ -15,3 +15,5 @@ mix.js("resources/js/form.js", "public/js/form.js")
     .js("resources/js/form.js", "public/js/handleNav.js")
     .sass("resources/sass/app.scss", "public/css")
     .sass("resources/sass/custom/style.scss", "public/css/new.css");
+
+mix.js("resources/js/script.js", "public/js/script.js")

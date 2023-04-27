@@ -53,10 +53,10 @@
                 <div class="wow slideInRight">
                     <div class="box-icon-classic">
                         <div class="box-icon-inner decorate-triangle"><span
-                                class="text-secondary icon-xxl electro-icon-13"></span></div>
+                                class="text-secondary icon-xxl electro-icon-12"></span></div>
                         <div class="box-icon-caption">
-                            <h4>{{ __('services.sixth-service') }}</h4>
-                            <p>{{ __('services.sixth-service-info') }}</p>
+                            <h4>{{ __('services.fifth-service') }}</h4>
+                            <p>{{ __('services.fifth-service-info') }}</p>
                         </div>
                     </div>
                 </div>
@@ -65,10 +65,10 @@
                 <div class="wow slideInDown">
                     <div class="box-icon-classic">
                         <div class="box-icon-inner decorate-rectangle"><span
-                                class="text-secondary icon-xl electro-icon-12"></span></div>
+                                class="text-secondary icon-xl electro-icon-13"></span></div>
                         <div class="box-icon-caption">
-                            <h4>{{ __('services.fifth-service') }}</h4>
-                            <p>{{ __('services.fifth-service-info') }}</p>
+                            <h4>{{ __('services.sixth-service') }}</h4>
+                            <p>{{ __('services.sixth-service-info') }}</p>
                         </div>
                     </div>
                 </div>

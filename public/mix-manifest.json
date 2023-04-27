@@ -2,5 +2,6 @@
     "/js/form.js": "/js/form.js",
     "/css/app.css": "/css/app.css",
     "/css/new.css": "/css/new.css",
-    "/js/handleNav.js": "/js/handleNav.js"
+    "/js/handleNav.js": "/js/handleNav.js",
+    "/js/script.js": "/js/script.js"
 }

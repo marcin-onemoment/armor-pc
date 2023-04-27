@@ -152,6 +152,10 @@ return [
     |
     */
 
+    'google' => [
+        'map_key' => env('GOOGLE_MAP_KEY'),
+    ],
+
     'providers' => [
 
         /*
