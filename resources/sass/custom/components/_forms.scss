@@ -376,7 +376,7 @@ textarea.form-input {
 }
 
 form {
-    padding: 50px;
+    padding: 50px 50px 0 50px;
     font-size: 20px;
 
     h1 {
@@ -399,11 +399,16 @@ form {
             border-radius: 5px;
         }
 
+        textarea {
+            min-height: 300px;
+        }
+
         .error-text {
-            margin: 5px 0 0 10px;
-            font-size: 14px;
-            color: $primary;
+            margin: 5px 0 10px 10px;
+            font-size: 16px;
+            color: $dark;
             visibility: hidden;
+            text-align: left;
         }
     }
     .form-box.error {
@@ -424,32 +429,18 @@ form {
         align-items: center;
     }
 
-    .send {
-        display: block;
-        padding: 20px 0;
-        width: 200px;
-        font-size: 18px;
-        background-color: $primary;
-        color: #fff;
-        border: none;
-        border-radius: 30px;
-        cursor: pointer;
-        transition: backgroung-color 0.3s;
-    }
 
-    .send:hover {
-        background-color: $secondary;
-    }
 
     .info {
       visibility: hidden;
-        margin-top: 50px;
+        margin-top: 30px;
         transition: visibility 0.5s;
 
         p {
             font-size: 28px;
             text-align: center;
             font-weight: bold;
+            margin-bottom: 10px;
         }
     }
 

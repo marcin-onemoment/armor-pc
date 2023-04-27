@@ -21,10 +21,10 @@
                         <p class="error-text">1</p>
                     </div>
                     <div class="control-button">
-                        <button class="send">{{ __('contact-us.form-btn') }}</button>
+                        <button class="button button-primary send">{{ __('contact-us.form-btn') }}</button>
                     </div>
                     <div class="info">
-                        <p>Formularz został poprawnie wysłany!</p>
+                        <p>{{ __('contact-us.form-info') }}</p>
                     </div>
                 </form>
             </div>

@@ -10,7 +10,7 @@ const showError = (input, msg) => {
 	const errorMsg = formBox.querySelector('.error-text')
 
 	formBox.classList.add('error')
-	errorMsg.textContent = msg
+	errorMsg.textContent = msg + '!'
 }
 
 const clearError = input => {
@@ -71,3 +71,5 @@ sendBtn.addEventListener('click', e => {
 	checkMail(email)
 	checkErrors()
 })
+
+

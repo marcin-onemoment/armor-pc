@@ -12,5 +12,6 @@ const mix = require("laravel-mix");
  */
 
 mix.js("resources/js/form.js", "public/js/form.js")
+    .js("resources/js/form.js", "public/js/handleNav.js")
     .sass("resources/sass/app.scss", "public/css")
     .sass("resources/sass/custom/style.scss", "public/css/new.css");
