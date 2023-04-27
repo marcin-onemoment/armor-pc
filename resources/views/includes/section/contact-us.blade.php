@@ -1,8 +1,8 @@
-<section class="section section-lg bg-gray-2 text-center" id="contacts">
+<!-- <section class="section section-lg bg-gray-2 text-center" id="contacts">
         <div class="container">
             <div class="row justify-content-md-center">
                 <div class="col-md-9 col-lg-7">
-                    <h2>{{ __('contact-us.title') }}</h2>
+                    <h2>{{ __('contact-us.title') }}</h2> -->
                     <!-- RD Mailform-->
                     {{--                    <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">--}}
                     {{--                        <div class="form-wrap">--}}
@@ -24,15 +24,14 @@
                     {{--                        <button class="button button-md button-primary" type="submit">send message</button>--}}
                     {{--                    </form>--}}
 
-    
+<!--     
                     </div>
             </div>
         </div>
-    </section>
+    </section> -->
            
     
-<!-- --- -->
-<!-- <section class="section section-lg bg-gray-2 text-center" id="contacts">
+<section class="section section-lg bg-gray-2 text-center" id="contacts">
     <div class="container">
         <div class="row justify-content-md-center">
             <div class="col-md-9 col-lg-7">
@@ -54,7 +53,7 @@
                         <textarea id="message" placeholder="{{ __('contact-us.form-message') }}"></textarea>
                         <p class="error-text"></p>
                     </div>
-                    <div class="control-buttons button button-md button-primary">
+                    <div class="control-buttons">
                         <button class="send">{{ __('contact-us.form-btn') }}</button>
                     </div>
                     <div class="popup">
@@ -65,4 +64,4 @@
             </div>
         </div>
     </div>
-</section> -->
+</section>

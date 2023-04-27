@@ -18,8 +18,8 @@
                         <div class="box-icon-inner decorate-triangle"><span
                                 class="text-secondary linearicons-phone-incoming icon-lg"></span></div>
                         <div class="box-icon-caption">
-                            <h4><a href="tel:#">1-800-123-1234</a></h4>
-                            <p>You can call us anytime</p>
+                            <h4><a href="tel:#">{{ __('maps.mobile') }}</a></h4>
+
                         </div>
                     </div>
                 </div>
@@ -28,7 +28,7 @@
                         <div class="box-icon-inner decorate-circle"><span
                                 class="text-secondary linearicons-map2 icon-lg"></span></div>
                         <div class="box-icon-caption">
-                            <h4><a href="#">51 Francis Street, Darlinghurst NSW 2010, United States</a></h4>
+                            <h4><a href="#">{{ __('maps.address') }}</a></h4>
                         </div>
                     </div>
                 </div>
@@ -37,8 +37,8 @@
                         <div class="box-icon-inner decorate-rectangle"><span
                                 class="text-secondary linearicons-paper-plane icon-lg"></span></div>
                         <div class="box-icon-caption">
-                            <h4><a href="mailto:#">info@demolink.org</a></h4>
-                            <p>Feel free to email us your questions</p>
+                            <h4><a href="mailto:#">{{ __('maps.email') }}</a></h4>
+
                         </div>
                     </div>
                 </div>

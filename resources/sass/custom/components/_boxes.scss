@@ -248,18 +248,18 @@
 
 	&.box-icon-classic-contacts {
 		max-width: 320px;
-		
+
 		h4 {
 			letter-spacing: -.02em;
 		}
-		
+
 		p{
 			font-weight: 300;
 			font-size: 15px;
 			letter-spacing: -.03em;
 			font-family: $font-family-sec;
 		}
-		
+
 		* + p {
 			margin-top: 10px;
 		}
@@ -377,7 +377,7 @@
 	max-width: 390px;
 	margin-left: auto;
 	margin-right: auto;
-	transition: all .3s;
+	overflow: hidden;
 	> * {
 		position: relative;
 		z-index: 1;
@@ -392,7 +392,19 @@
 
 .team-classic-figure {
 	position: relative;
+	transition: transform .3s;
+	height: 252px;
+	width: 391px;
+	object-fit: contain;
 
+	img{
+		height: 100%;
+		width: 100%;
+	}
+
+	&:hover {
+		transform: scale(1.05);
+	}
 	.team-classic-soc-list {
 		text-align: center;
 		position: absolute;
@@ -421,7 +433,8 @@
 	padding: 19px 25px 30px;
 	transition: all .5s;
 	background: $white;
-	
+	height: 120px;
+
 	p {
 		margin-top: 9px;
 		font-size: 13px;
@@ -430,12 +443,19 @@
 		letter-spacing: 0.05em;
 		text-transform: uppercase;
 	}
+	.team-name {
+		line-height: 80px;
+		letter-spacing: -0.02em;
+		color: #000;
+	}
+
+	.team-name-long{
+		line-height: 40px;
+		letter-spacing: -0.02em;
+		color: #000;
+	}
 }
 
-.team-name {
-	line-height: 35px;
-	letter-spacing: -0.02em;
-}
 
 //team modern
 .team-modern {
@@ -722,7 +742,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0 30px 30px;
-	
+
 	// Medium ≥768px
 	@include media-breakpoint-up(md) {
 		padding: 30px;
@@ -746,7 +766,7 @@
 
 	@include media-breakpoint-up(lg) {
 		width: 650px;
-		padding: 35px 0 55px;
+		padding: 35px 0 35px;
 	}
 	@include media-breakpoint-up(xl) {
 		width: 780px;

@@ -2,6 +2,7 @@
 
 return [
     'question' => 'Potrzebujesz pomocy?',
-    'description' => 'Jesteśmy w ciągłej gotowości, aby pomóc Ci naprawić Twoje urządzenie.',
+    'description' => 'Może potrzebujesz nowego sprzętu albo upgradu? Napisz, na pewno Ci pomożemy.
+    .',
     'cta-btn' => 'wyślij zapytanie',
     ];

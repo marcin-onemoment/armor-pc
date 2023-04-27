@@ -45,11 +45,7 @@
                 <div class="col-lg-4 order-lg-1 wow-outer pe-xl-85">
                     <div class="wow slideInLeft">
                         <div class="row row-30">
-                            <div class="col-12"><a class="brand" href="index.html"><img class="brand-logo-dark"
-                                                                                        src="{{ asset('images/fb_baner.jpg') }}"
-                                                                                        alt="" width="219" height="46"/><img
-                                        class="brand-logo-light" src="images/fb_baner.jpg" alt="" width="219"
-                                        height="46"/></a>
+                            <div class="col-12"><a class="brand" href="index.html"><img class="brand-logo-dark" src="{{ asset('images/fb_baner.jpg') }}" alt="" width="219" height="46"/><img class="brand-logo-light" src="images/logo_transparent.png" alt="" width="219" height="46"/></a>
                             </div>
                             <div class="col-12">
                                 <p>{{ __('footer.info') }}</p>

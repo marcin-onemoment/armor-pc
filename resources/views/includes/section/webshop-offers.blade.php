@@ -17,7 +17,7 @@
                     <div class="col-lg-4 col-xl-3 order-lg-2 wow-outer">
                         <div class="wow slideInRight">
                             <ul class="nav nav-tabs nav-tabs-modern">
-                                <li class="nav-item" role="presentation"><a class="nav-link active" href="#tabs-1-1"
+                                <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-1"
                                                                             data-bs-toggle="tab">{{ __('webshop-offers.first-category') }}</a></li>
                                 <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-2"
                                                                             data-bs-toggle="tab">{{ __('webshop-offers.second-category') }}</a></li>

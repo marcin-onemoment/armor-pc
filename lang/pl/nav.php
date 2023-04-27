@@ -5,5 +5,5 @@ return [
     'item2' => 'Naprawa',
     'item3' => 'Oferta',
     'item4' => 'Kontakt',
-    'mobile' => '+48 XXX XXX XXX',
+    'mobile' => '+48 515-702-840',
     ];

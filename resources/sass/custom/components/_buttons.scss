@@ -41,7 +41,7 @@
 }
 
 .button-primary {
-	@include btn-variant($white, $primary, $primary, $white, $gray-800, $gray-800);
+	@include btn-variant($white, $primary, $primary, $white, $secondary, $secondary );
 }
 
 .button-secondary {
