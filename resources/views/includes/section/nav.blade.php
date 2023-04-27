@@ -16,8 +16,8 @@
                     <!-- RD Navbar Brand-->
                     <div class="rd-navbar-brand">
                         <a class="brand" href="#home">
-                            <img class="brand-logo brand-logo-dark" alt="Logo serwisu ArmorPC"/>
-                            <img class="brand-logo brand-logo-light" alt="Logo serwisu ArmorPC"/>
+                            <img class="brand-logo brand-logo-dark" src="/images/logo_transparent.png" alt="Logo serwisu ArmorPC"/>
+                            <img class="brand-logo brand-logo-light" src="/images/logo_transparent.png" alt="Logo serwisu ArmorPC"/>
                         </a>
                     </div>
                 </div>
@@ -29,8 +29,8 @@
                             </li>
                             <li class="rd-nav-item"><a class="rd-nav-link" href="#repairs">{{ __('nav.item2') }}</a>
                             </li>
-                            <li class="rd-nav-item"><a class="rd-nav-link" href="#pricing">{{ __('nav.item3') }}</a>
-                            </li>
+                            <!-- <li class="rd-nav-item"><a class="rd-nav-link" href="#pricing">{{ __('nav.item3') }}</a>
+                            </li> -->
                             <li class="rd-nav-item"><a class="rd-nav-link" href="#contacts">{{ __('nav.item4') }}</a>
                             </li>
                         </ul>

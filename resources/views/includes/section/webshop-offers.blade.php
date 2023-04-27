@@ -1,4 +1,4 @@
-<section class="section-lg section bg-gray-2" id="pricing">
+<!-- <section class="section-lg section bg-gray-2" id="pricing">
     <div class="container">
         <div class="row row-35 justify-content-center text-center">
             <div class="col-12 wow-outer">
@@ -194,4 +194,4 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->

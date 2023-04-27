@@ -16,11 +16,11 @@
             </div>
 
             <div class="carousel-item two">
-                <div class="item-content container">
+                <div class="item-content container right">
                     <div class="col-sm-10 col-md-7 col-xl-6">
                         <h1>{{ __('header.question-second') }}</h1>
                         <h4 class="text-opacity-80 fw-normal">{{ __('header.description-second') }}</h4>
-                        <a class="button button-primary" href="{{ asset('#pricing') }}">{{ __('header.cta-btn') }}</a>
+                        <a class="button button-primary" href="https://allegro.pl/uzytkownik/ArmorPC" target="_blank">{{ __('header.cta-btn') }}</a>
                     </div>
                 </div>
             </div>
