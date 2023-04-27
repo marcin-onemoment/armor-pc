@@ -20,7 +20,7 @@
 // Boxed Layout 
 html.boxed {
 	body {
-		background: $page-boxed-background-color $page-boxed-background-image repeat fixed;
+		// background: $page-boxed-background-color $page-boxed-background-image repeat fixed;
 	}
 
 	@media (min-width: $page-boxed-width + $grid-gutter-width) {

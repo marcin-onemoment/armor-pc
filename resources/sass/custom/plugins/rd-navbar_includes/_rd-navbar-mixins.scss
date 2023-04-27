@@ -239,7 +239,7 @@
 		transform: rotate(180deg);
 		&:before,
 		&:after {
-			transform-origin: $font-size/14 center;
+			transform-origin: calc($font-size/14) center;
 		}
 	}
 
@@ -249,7 +249,7 @@
 		&:before,
 		&:after {
 			top: 0;
-			width: $font-size/1.6;
+			width: calc($font-size/1.6);
 		}
 
 		&:before {
@@ -298,17 +298,17 @@
 @mixin collapse-preset-1($size: 48px, $font-size: 24px, $color: $white) {
 	span {
 		top: 50%;
-		margin-top: -($size / 16);
+		margin-top: -(calc($size / 16));
 
 		&, &:before, &:after {
 			position: absolute;
-			width: $size / 8;
-			height: $size / 8;
-			line-height: $size / 8;
+			width: calc($size / 8);
+			height: calc($size / 8);
+			line-height: calc($size / 8);
 			text-align: center;
 			background: $color;
 			left: 50%;
-			margin-left: -($size / 16);
+			margin-left: -(calc($size / 16));
 			border-radius: 50%;
 			transition: .3s all ease;
 		}
@@ -319,12 +319,12 @@
 
 		&:before {
 			bottom: 100%;
-			margin-bottom: ($size / 16);
+			margin-bottom: calc(($size / 16));
 		}
 
 		&:after {
 			top: 100%;
-			margin-top: ($size / 16);
+			margin-top: calc(($size / 16));
 		}
 	}
 
@@ -332,11 +332,11 @@
 		span {
 			transform: scale(0.7);
 			&:before {
-				transform: translateY(($size / 8)*2 + ($size / 16)*2);
+				transform: translateY(calc(($size / 8))*2 + calc(($size / 16))*2);
 			}
 
 			&:after {
-				transform: translateY(-(($size / 8)*2 + ($size / 16)*2));
+				transform: translateY(-(calc(($size / 8))*2 + calc(($size / 16))*2));
 			}
 		}
 	}

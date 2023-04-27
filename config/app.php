@@ -80,7 +80,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'pl',
 
     /*
     |--------------------------------------------------------------------------
@@ -151,6 +151,10 @@ return [
     | this array to grant expanded functionality to your applications.
     |
     */
+
+    'google' => [
+        'map_key' => env('GOOGLE_MAP_KEY'),
+    ],
 
     'providers' => [
 

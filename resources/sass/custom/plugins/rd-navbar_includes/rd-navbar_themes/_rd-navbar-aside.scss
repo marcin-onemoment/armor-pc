@@ -10,8 +10,9 @@
 
 		.rd-navbar-aside-outer,
 		.rd-navbar-main-outer {
-			padding-left: $grid-gutter-width / 2;
-			padding-right: $grid-gutter-width / 2;
+			padding-left: calc($grid-gutter-width / 2);
+			padding-right: calc($grid-gutter-width / 2);
+			margin: 0;
 		}
 
 		.rd-navbar-aside,
@@ -19,8 +20,7 @@
 			max-width: 1200px;
 			padding-left: 15px;
 			padding-right: 15px;
-			margin-left: auto;
-			margin-right: auto;
+			margin: 0;
 			
 			.button {
 				margin-top: 0;
@@ -34,9 +34,7 @@
 
 		.rd-navbar-main {
 			position: relative;
-			
-		
-			padding: 32px 0;
+			padding: 25px 0;
 			
 		}
 		.rd-nav-item  + .rd-nav-item{

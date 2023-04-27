@@ -67,7 +67,7 @@ $rd-navbar-fixed-submenu-toggle-focus-color: $white;
 		display: flex;
 		align-items: center;
 		height: $rd-navbar-fixed-height;
-		padding: ($rd-navbar-fixed-height - $rd-navbar-fixed-line-height) / 2;
+		padding: calc(($rd-navbar-fixed-height - $rd-navbar-fixed-line-height) / 2);
 		box-shadow: 0px 0px 15px rgba(21, 21, 21, 0.35);
 	}
 
@@ -263,7 +263,7 @@ $rd-navbar-fixed-submenu-toggle-focus-color: $white;
 	// RD Navbar Collapse
 	.rd-navbar-collapse-toggle {
 		display: block;
-		top: round(($rd-navbar-min-height - $rd-navbar-min-line-height) / 2);
+		top: round(calc(($rd-navbar-min-height - $rd-navbar-min-line-height) / 2));
 		z-index: $zindex-rd-navbar + 1;
 	}
 
@@ -355,7 +355,7 @@ $rd-navbar-fixed-submenu-toggle-focus-color: $white;
 
 	[class*='rd-navbar-fixed-element'] {
 		position: fixed;
-		top: ($rd-navbar-fixed-height - $rd-navbar-fixed-line-height) / 2;
+		top: calc(($rd-navbar-fixed-height - $rd-navbar-fixed-line-height) / 2);
 		z-index: $zindex-rd-navbar + 2;
 	}
 

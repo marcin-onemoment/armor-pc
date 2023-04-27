@@ -2,8 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
-use Illuminate\Http\Request;
+use App\Models\Opinion;
 
 class IndexController extends Controller
 {
@@ -14,8 +13,8 @@ class IndexController extends Controller
      */
     public function index()
     {
-        $users = User::all();
+        $opinions = Opinion::all();
 
-        return view('index', compact('users'));
+        return view('index', compact('opinions'));
     }
 }
