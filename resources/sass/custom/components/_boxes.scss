@@ -248,18 +248,18 @@
 
 	&.box-icon-classic-contacts {
 		max-width: 320px;
-		
+
 		h4 {
 			letter-spacing: -.02em;
 		}
-		
+
 		p{
 			font-weight: 300;
 			font-size: 15px;
 			letter-spacing: -.03em;
 			font-family: $font-family-sec;
 		}
-		
+
 		* + p {
 			margin-top: 10px;
 		}
@@ -382,7 +382,12 @@
 		position: relative;
 		z-index: 1;
 	}
-	
+
+	&:hover {
+		box-shadow: 0 8px 20px rgba($black, 0.25);
+		z-index: 2;
+		background-color: #fff;
+	}
 }
 
 .team-classic-figure {
@@ -396,7 +401,7 @@
 		height: 100%;
 		width: 100%;
 	}
-	
+
 	&:hover {
 		transform: scale(1.05);
 	}
@@ -429,7 +434,7 @@
 	transition: all .5s;
 	background: $white;
 	height: 120px;
-	
+
 	p {
 		margin-top: 9px;
 		font-size: 13px;
@@ -737,7 +742,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0 30px 30px;
-	
+
 	// Medium ≥768px
 	@include media-breakpoint-up(md) {
 		padding: 30px;
