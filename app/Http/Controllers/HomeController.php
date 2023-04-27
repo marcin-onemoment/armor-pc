@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Opinion;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -24,11 +25,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $users = User::count();
-
         $widget = [
-            'users' => $users,
-            //...
+            'users' =>  User::count(),
+            'opinions' =>  Opinion::count(),
         ];
 
         return view('home', compact('widget'));

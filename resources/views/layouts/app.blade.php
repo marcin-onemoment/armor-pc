@@ -26,9 +26,10 @@
 
 
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
     <script src="{{ asset('js/core.min.js') }}"></script>
     <script src="{{ asset('js/script.js') }}"></script>
     <script src="{{ asset('js/form.js') }}"></script>
+    <script src="{{ asset('js/carousel.js') }}"></script>
+    @stack('scripts')
 </body>
 </html>
