@@ -11,7 +11,7 @@ const mix = require("laravel-mix");
  |
  */
 
-mix.js("resources/js/carousel.js", "public/js/carousel.js")
+mix.js("resources/js/form.js", "public/js/form.js")
     .sass("resources/sass/app.scss", "public/css")
     .sass("resources/sass/custom/style.scss", "public/css/new.css");
 

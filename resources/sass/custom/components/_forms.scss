@@ -376,7 +376,7 @@ textarea.form-input {
 }
 
 form {
-    padding: 40px;
+    padding: 50px;
     font-size: 20px;
 
     h1 {
@@ -385,13 +385,13 @@ form {
     }
 
     .form-box {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
 
         label {
             display: inline-block;
-            margin-bottom: 10px;
+            margin-bottom: 10 px;
         }
-        input {
+        input, textarea {
             width: 100%;
             padding: 10px;
             font-size: 16px;
@@ -402,13 +402,13 @@ form {
         .error-text {
             margin: 5px 0 0 10px;
             font-size: 14px;
-            color: rgb(0, 137, 250);
+            color: $primary;
             visibility: hidden;
         }
     }
     .form-box.error {
-        input {
-            border: 1px solid rgb(0, 137, 250);
+        input, textarea {
+            border: 1px solid $primary;
             background-color: rgba(0, 137, 250, 0.1);
         }
     }
@@ -418,7 +418,7 @@ form {
         }
     }
 
-    .control-buttons {
+    .control-button {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -426,13 +426,13 @@ form {
 
     .send {
         display: block;
-        padding: 10px 0;
+        padding: 20px 0;
         width: 200px;
         font-size: 18px;
         background-color: $primary;
         color: #fff;
         border: none;
-        border-radius: 18px;
+        border-radius: 30px;
         cursor: pointer;
         transition: backgroung-color 0.3s;
     }
@@ -441,161 +441,19 @@ form {
         background-color: $secondary;
     }
 
-    .popup {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        top: -300px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 600px;
-        height: 150px;
-        background-color: #fff;
-        border-radius: 8px;
-        border: 2px solid black;
-        transition: top 0.5s;
+    .info {
+      visibility: hidden;
+        margin-top: 50px;
+        transition: visibility 0.5s;
 
         p {
             font-size: 28px;
-        }
-
-        .close {
-            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;
         }
     }
 
-    .show-popup {
-        top: 100px;
+    .show {
+        visibility: visible;
     }
 }
-
-//
-// RD Form Inline
-//
-// .rd-form-inline {
-// 	display: flex;
-// 	flex-wrap: wrap;
-// 	align-items: stretch;
-// 	text-align: center;
-// 	@include spacing(22px);
-
-// 	> * {
-// 		margin-top: 0;
-// 		margin-bottom: 20px;
-// 	}
-
-// 	@include media-breakpoint-up(lg) {
-// 		> * {
-// 			margin-top: 0;
-// 		}
-// 	}
-
-// 	.form-label {
-// 		justify-content: flex-start;
-// 		padding-left: 36px;
-// 	}
-
-// 	.form-wrap {
-// 		flex: auto;
-// 		min-width: 185px;
-// 		flex: 1;
-// 		@include media-breakpoint-down(sm) {
-// 			width: 100%;
-// 		}
-// 	}
-
-// 	.form-wrap-select {
-// 		text-align: left;
-// 	}
-
-// 	.form-button {
-// 		flex-shrink: 0;
-// 		max-width: calc(100% - 10px);
-// 		min-height: $form-input-height;
-// 		@include media-breakpoint-down(sm) {
-// 			max-width: inherit;
-// 			width: 100%;
-// 			.button {
-// 				width: 100%;
-// 			}
-
-// 		}
-
-// 		.button {
-// 			min-height: inherit;
-// 		}
-// 	}
-
-// 	@include media-breakpoint-up(sm) {
-// 		.button {
-// 			display: block;
-// 		}
-// 	}
-
-// 	&.rd-form-inline-centered {
-// 		justify-content: center;
-// 	}
-// }
-
-// //
-// // Form Small
-// //
-// .form-sm {
-// 	.form-input,
-// 	.button {
-// 		padding-top: 9px;
-// 		padding-bottom: 9px;
-// 		min-height: $form-input-sm-height;
-// 	}
-
-// 	.form-validation {
-// 		top: -16px;
-// 	}
-
-// 	.form-label {
-// 		top: calc($form-input-sm-height / 2);
-// 	}
-
-// 	* + .button {
-// 		margin-top: 10px;
-// 	}
-// }
-
-// //
-// // Form Large
-// //
-// .form-lg {
-// 	.form-input,
-// 	.form-label,
-// 	.select2-container .select2-choice {
-// 		font-size: 16px;
-// 	}
-
-// 	.form-input,
-// 	.select2-container .select2-choice {
-// 		font-size: 16px;
-// 		padding-top: round(calc(($form-input-lg-height - $form-input-line-height) / 2)) - 1px;
-// 		padding-bottom: round(calc(($form-input-lg-height - $form-input-line-height) / 2)) - 1px;
-// 	}
-
-// 	.form-input,
-// 	.select2-container .select2-choice {
-// 		min-height: $form-input-lg-height - 2px;
-// 	}
-
-// 	.form-button {
-// 		min-height: $form-input-lg-height;
-// 	}
-
-// 	.form-label {
-// 		top: round(calc($form-input-lg-height / 2));
-// 	}
-// }
-
-// .bg-default {
-// 	.form-input {
-// 		background: $gray-1;
-// 	}
-// }

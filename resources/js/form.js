@@ -1,22 +1,9 @@
-// $('.hero-carousel').slick({
-// 	arrows: false,
-// 	mobileFirst: true,
-// 	autoplay: false,
-// 	slidesToShow: 1,
-// 	slidesToScroll: 1,
-// })
-
-
-
-
 const username = document.querySelector('#username')
-const pass = document.querySelector('#password')
-const repeatPass = document.querySelector('#repeat-password')
 const email = document.querySelector('#email')
-const clearBtn = document.querySelector('.clear')
+const title = document.querySelector('#title')
+const message = document.querySelector('#message')
 const sendBtn = document.querySelector('.send')
-const cancelBtn = document.querySelector('.cancel')
-const popup = document.querySelector('.popup')
+const info = document.querySelector('.info')
 
 const showError = (input, msg) => {
 	const formBox = input.parentElement
@@ -43,13 +30,7 @@ const checkForm = input => {
 
 const checkLength = (input, min) => {
 	if ((input.value.length < min) & (input.value !== '')) {
-		showError(input, `${input.previousElementSibling.innerText.slice(0, -1)} składa sie z min. ${min} znaków.`)
-	}
-}
-
-const comparePassword = (pass1, pass2) => {
-	if (pass1.value !== pass2.value) {
-		showError(pass2, 'Hasła nie są takie same')
+		showError(input, `Nazwa użytkownika musi składać się z min. ${min} znaków.`)
 	}
 }
 
@@ -75,31 +56,18 @@ const checkErrors = () => {
 	})
 
 	if (countError === 0) {
-		popup.classList.add('show-popup')
+		info.classList.add('show')
 	}
 }
 
 //AddEventListener on the buttons
 
 //Send button
+
 sendBtn.addEventListener('click', e => {
 	e.preventDefault()
-
-	checkForm([username, pass, repeatPass, email])
-
+	checkForm([username, email, title, message])
 	checkLength(username, 3)
-	checkLength(pass, 8)
-	comparePassword(pass, repeatPass)
 	checkMail(email)
 	checkErrors()
-})
-
-//ClearButton
-clearBtn.addEventListener('click', e => {
-	e.preventDefault();
-	
-	[username, pass, repeatPass, email].forEach(el => {
-		el.value = ''
-		clearError(el)
-	})
 })
