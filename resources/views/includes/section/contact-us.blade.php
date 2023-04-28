@@ -23,9 +23,7 @@
                     <div class="control-button">
                         <button class="button button-primary send">{{ __('contact-us.form-btn') }}</button>
                     </div>
-                    <div class="info">
-                        <p>{{ __('contact-us.form-info') }}</p>
-                    </div>
+
                 </form>
             </div>
         </div>

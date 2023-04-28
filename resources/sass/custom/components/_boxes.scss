@@ -165,6 +165,10 @@
 .box-icon-inner {
 	position: relative;
 
+	.fa-regular {
+		font-size: 50px;
+	}
+
 	> * {
 		position: relative;
 		z-index: 1;
@@ -446,13 +450,13 @@
 	.team-name {
 		line-height: 80px;
 		letter-spacing: -0.02em;
-		color: #000;
+		color: #151515;
 	}
 
 	.team-name-long{
 		line-height: 40px;
 		letter-spacing: -0.02em;
-		color: #000;
+		color: #151515;
 	}
 }
 

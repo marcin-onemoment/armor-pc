@@ -9,7 +9,7 @@
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <link rel="icon" href="images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" type="text/css"
-              href="//fonts.googleapis.com/css?family=Lato:100,300,400,400i,700,900%7CRoboto:400">
+        href="//fonts.googleapis.com/css?family=Lato:100,300,400,400i,700,900%7CRoboto:400">
         <script src="https://kit.fontawesome.com/a924c70fc6.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
         <link rel="stylesheet" href="{{ asset('css/fonts.css') }}">
@@ -21,11 +21,12 @@
                 @yield('content')
             </main>
         </div>
-
+        
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script src="{{ asset('js/core.min.js') }}"></script>
         <script src="{{ asset('js/script.js') }}"></script>
         <script src="{{ asset('js/form.js') }}"></script>
-        <script src="{{ asset('js/handleNav.js') }}"></script>
+        <script src="{{ asset('js/sweetAlert.js') }}"></script>
     </body>
 </html>

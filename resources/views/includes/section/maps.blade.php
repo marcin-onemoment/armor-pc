@@ -16,8 +16,7 @@
             <div class="row row-50 justify-content-center">
                 <div class="col-md-6 col-lg-4">
                     <div class="box-icon-classic box-icon-classic-contacts">
-                        <div class="box-icon-inner decorate-triangle"><span
-                                class="text-secondary linearicons-phone-incoming icon-lg"></span></div>
+                        <div class="box-icon-inner decorate-triangle"><i class="fa-regular fa-phone"></i></div>
                         <div class="box-icon-caption">
                             <h4><a href="tel:#">{{ __('maps.mobile') }}</a></h4>
 
@@ -26,8 +25,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="box-icon-classic box-icon-classic-contacts">
-                        <div class="box-icon-inner decorate-circle"><span
-                                class="text-secondary linearicons-map2 icon-lg"></span></div>
+                        <div class="box-icon-inner decorate-circle"><i class="fa-regular fa-map"></i></div>
                         <div class="box-icon-caption">
                             <h4>{{ __('maps.address') }}</h4>
                         </div>
@@ -35,8 +33,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="box-icon-classic box-icon-classic-contacts">
-                        <div class="box-icon-inner decorate-rectangle"><span
-                                class="text-secondary linearicons-paper-plane icon-lg"></span></div>
+                        <div class="box-icon-inner decorate-rectangle"><i class="fa-regular fa-paper-plane"></i></div>
                         <div class="box-icon-caption">
                             <h4><a href="mailto:#">{{ __('maps.email') }}</a></h4>
 

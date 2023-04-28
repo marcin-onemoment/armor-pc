@@ -93,25 +93,24 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-var username = document.querySelector('#username');
-var email = document.querySelector('#email');
-var title = document.querySelector('#title');
-var message = document.querySelector('#message');
-var sendBtn = document.querySelector('.send');
-var info = document.querySelector('.info');
+var username = document.querySelector("#username");
+var email = document.querySelector("#email");
+var title = document.querySelector("#title");
+var message = document.querySelector("#message");
+var sendBtn = document.querySelector(".send");
 var showError = function showError(input, msg) {
   var formBox = input.parentElement;
-  var errorMsg = formBox.querySelector('.error-text');
-  formBox.classList.add('error');
-  errorMsg.textContent = msg + '!';
+  var errorMsg = formBox.querySelector(".error-text");
+  formBox.classList.add("error");
+  errorMsg.textContent = msg + "!";
 };
 var clearError = function clearError(input) {
   var formBox = input.parentElement;
-  formBox.classList.remove('error');
+  formBox.classList.remove("error");
 };
 var checkForm = function checkForm(input) {
   input.forEach(function (el) {
-    if (el.value === '') {
+    if (el.value === "") {
       showError(el, el.placeholder);
     } else {
       clearError(el);
@@ -119,7 +118,7 @@ var checkForm = function checkForm(input) {
   });
 };
 var checkLength = function checkLength(input, min) {
-  if (input.value.length < min & input.value !== '') {
+  if (input.value.length < min & input.value !== "") {
     showError(input, "Nazwa u\u017Cytkownika musi sk\u0142ada\u0107 si\u0119 z min. ".concat(min, " znak\xF3w."));
   }
 };
@@ -128,27 +127,54 @@ var checkMail = function checkMail(email) {
   if (re.test(email.value)) {
     clearError(email);
   } else {
-    showError(email, 'E-mail jest niepoprawny');
+    showError(email, "E-mail jest niepoprawny");
   }
 };
 var checkErrors = function checkErrors() {
-  var allInputs = document.querySelectorAll('.form-box');
+  var allInputs = document.querySelectorAll(".form-box");
   var countError = 0;
   allInputs.forEach(function (el) {
-    if (el.classList.contains('error')) {
+    if (el.classList.contains("error")) {
       countError++;
     }
   });
   if (countError === 0) {
-    info.classList.add('show');
+    sendBtn.classList.add("checked");
+    showPopup();
   }
 };
-
-//AddEventListener on the buttons
-
-//Send button
-
-sendBtn.addEventListener('click', function (e) {
+var toastMixin = Swal.mixin({
+  toast: true,
+  icon: "success",
+  title: "General Title",
+  animation: false,
+  position: "top-right",
+  showConfirmButton: false,
+  timer: 3000,
+  timerProgressBar: true,
+  didOpen: function didOpen(toast) {
+    toast.addEventListener("mouseenter", Swal.stopTimer);
+    toast.addEventListener("mouseleave", Swal.resumeTimer);
+  }
+});
+var showPopup = function showPopup() {
+  Swal.fire({
+    toast: true,
+    icon: "success",
+    title: "Formularz został wysłany poprawnie!",
+    animation: false,
+    width: "400px",
+    position: "bottom",
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    didOpen: function didOpen(toast) {
+      toast.addEventListener("mouseenter", Swal.stopTimer);
+      toast.addEventListener("mouseleave", Swal.resumeTimer);
+    }
+  });
+};
+sendBtn.addEventListener("click", function (e) {
   e.preventDefault();
   checkForm([username, email, title, message]);
   checkLength(username, 3);

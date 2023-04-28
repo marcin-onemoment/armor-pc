@@ -29,7 +29,7 @@ body {
 		color: inherit;
 
 		&:hover {
-			color: $secondary2;
+			color: $primary;
 		}
 	}
 }
@@ -137,7 +137,7 @@ mark,
 	background: $primary;
 }
 
-// Big text
+// Big textTypography
 .big {
 	font-size: $font-size-lg;
 	line-height: $line-height-lg;

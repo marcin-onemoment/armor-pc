@@ -5,7 +5,6 @@
                 <div class="wow slideInRight">
                     <div class="row row-35 justify-content-between">
                         <div class="col-12">
-                            <p class="sub-title-2 footer-title">{{ __('footer.sub') }}</p>
                             <!-- RD Mailform-->
                             {{--                                <form class="rd-mailform text-start rd-form-inline" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">--}}
                             {{--                                    <div class="form-wrap">--}}

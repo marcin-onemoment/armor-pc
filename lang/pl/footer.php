@@ -1,7 +1,6 @@
 <?php
 
 return [
-    'sub' => 'subskrybuj i bądź na bieżąco!',
     'contact' => 'telefon i adres',
     'address' => 'Kaliska 35A/212 Ostrów Wielkopolski',
     'mobile' => '+48 515-702-840',
