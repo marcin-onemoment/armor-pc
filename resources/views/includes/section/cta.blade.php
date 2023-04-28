@@ -1,4 +1,4 @@
-<section class="parallax-container" data-parallax-img="images/parallax-img-1.jpg">
+<section class="parallax-container" data-parallax-img="/images/cta/parallax-img-1.jpg">
         <div class="parallax-content section-xl-2 text-center">
             <div class="container">
                 <div class="row justify-content-md-center">

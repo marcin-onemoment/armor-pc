@@ -27,6 +27,5 @@
         <script src="{{ asset('js/core.min.js') }}"></script>
         <script src="{{ asset('js/script.js') }}"></script>
         <script src="{{ asset('js/form.js') }}"></script>
-        <script src="{{ asset('js/sweetAlert.js') }}"></script>
     </body>
 </html>

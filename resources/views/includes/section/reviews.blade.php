@@ -5,7 +5,7 @@
                 <h2>{{ __('reviews.title') }}</h2>
             </div>
         </div>
-        <!-- Slick Carousel-->
+        Slick Carousel
         <div class="slick-slider carousel-parent" data-arrows="true" data-loop="true" data-autoplay="false"
              data-dots="false" data-swipe="true" data-items="1" data-child="#child-carousel"
              data-for="#child-carousel">
