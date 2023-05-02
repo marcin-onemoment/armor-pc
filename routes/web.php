@@ -23,6 +23,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/profile', 'ProfileController@index')->name('profile');
 Route::put('/profile', 'ProfileController@update')->name('profile.update');
 
+Route::post('contact-us', [\App\Http\Controllers\ContactController::class, 'store'])->name('contact.us.store');
+
+
 Route::prefix('admin')->middleware('auth:web')->group(function () {
    Route::resource('opinions', \App\Http\Controllers\Admin\OpinionController::class);
 });

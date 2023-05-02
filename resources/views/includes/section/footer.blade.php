@@ -30,12 +30,12 @@
                             <p class="sub-title-2 footer-title">{{ __('footer.socialmedia') }}</p>
                             <p>{{ __('footer.socialmedia-info') }}</p>
                             <ul class="social-list">
-                                <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-facebook"
-                                       href="#"></a></li>
-                                <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-instagram"
-                                       href="#"></a></li>
-                                <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-twitter"
-                                       href="#"></a></li>
+                                <li><a target="_blank" class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-facebook"
+                                       href="https://www.facebook.com/profile.php?id=100091757294879"></a></li>
+{{--                                <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-instagram"--}}
+{{--                                       href="#"></a></li>--}}
+{{--                                <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-twitter"--}}
+{{--                                       href="#"></a></li>--}}
                             </ul>
                         </div>
                     </div>
@@ -44,7 +44,7 @@
             <div class="col-lg-4 order-lg-1 wow-outer pe-xl-85">
                 <div class="wow slideInLeft">
                     <div class="row row-30">
-                        <div class="col-12"><a class="brand" href="#home"><img class="brand-logo-dark" src="{{ asset('images/fb_baner.jpg') }}" alt="" width="219" height="46"/><img class="brand-logo-light" src="images/logo_transparent.png" alt="" width="219" height="46"/></a>
+                        <div class="col-12"><a class="brand" href="#home"><img class="brand-logo-light" src="images/logo_transparent.png" alt="" width="219" height="46"/></a>
                         </div>
                         <div class="col-12">
                             <p>{{ __('footer.info') }}</p>

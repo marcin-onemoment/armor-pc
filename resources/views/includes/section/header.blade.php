@@ -1,5 +1,5 @@
 <section class="section section-main-bunner context-dark" id="home">
-    <div id="carouselExampleIndicators" class="carousel slide d-none d-lg-block" data-bs-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide d-block" data-bs-ride="carousel">
         <div class="carousel-indicators py-3">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -25,6 +25,5 @@
                 </div>
             </div>
         </div>
-    </div>
     </div>
 </section>
