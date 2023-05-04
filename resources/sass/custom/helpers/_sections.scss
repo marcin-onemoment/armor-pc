@@ -204,10 +204,11 @@ html [class*="section-"].section-bottom-0 {
         height: 100vh;
         width: 100vw;
         .carousel-item {
-            position: absolute;
+            position: relative;
+            height: 100vh;
             background-size: cover;
-            width: 100%;
-            height: 100%;
+            background-position: center;
+
 
             .container {
                 position: relative;
@@ -228,7 +229,6 @@ html [class*="section-"].section-bottom-0 {
         }
         .two {
             background-image: url("/images/header/carousel-two.jpg");
-            background-position: bottom;
         }
     }
 
