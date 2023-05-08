@@ -88,7 +88,7 @@ return [
     ],
 
     'to' => [
-        'admin' => env('admin_mail'),
+        'admin' => env('ADMIN_MAIL'),
 
     ],
 
