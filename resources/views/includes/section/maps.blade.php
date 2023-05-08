@@ -27,7 +27,7 @@
                     <div class="box-icon-classic box-icon-classic-contacts">
                         <div class="box-icon-inner decorate-circle"><img src="/images/icons8-location-64.png"></div>
                         <div class="box-icon-caption">
-                            <h4> <a href="https://www.google.com/maps/place/ArmorPC+s.c./@51.6504459,17.821929,15z/data=!4m2!3m1!1s0x0:0xf52e34cf5306dc0c?sa=X&ved=2ahUKEwjbo73J--X-AhXJwosKHW2IDdcQ_BJ6BAhQEAc" target="_blank"></a>{{ __('maps.address') }}</h4>
+                            <h4> <a href="https://www.google.com/maps/place/ArmorPC+s.c./@51.6504459,17.821929,15z/data=!4m2!3m1!1s0x0:0xf52e34cf5306dc0c?sa=X&ved=2ahUKEwjbo73J--X-AhXJwosKHW2IDdcQ_BJ6BAhQEAc" target="_blank">{{ __('maps.address') }}</a></h4>
                         </div>
                     </div>
                 </div>

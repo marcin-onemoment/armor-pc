@@ -25,6 +25,9 @@
                                 <li>
                                     <span class="icon mdi mdi-phone icon-sm icon-primary"></span>
                                     <span class="list-item-text">Serwis: <a href="tel:{{ __('footer.mobile') }}">{{ __('footer.mobile') }}</a></span>
+                                </li>
+                                <li>
+                                    <span class="icon mdi mdi-phone icon-sm icon-primary"></span>
                                     <span class="list-item-text">Wysyłka: <a href="tel:{{ __('footer.ship_mobile') }}">{{ __('footer.ship_mobile') }}</a></span>
                                 </li>
                             </ul>
