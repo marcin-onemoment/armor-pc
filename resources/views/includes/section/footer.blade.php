@@ -22,8 +22,11 @@
                                 <li><span class="icon mdi mdi-map-marker icon-md icon-primary"></span><span
                                         class="list-item-text"><a href="#">{{ __('footer.address') }}</a></span>
                                 </li>
-                                <li><span class="icon mdi mdi-phone icon-sm icon-primary"></span><span
-                                        class="list-item-text"><a href="tel:#">{{ __('footer.mobile') }}</a></span></li>
+                                <li>
+                                    <span class="icon mdi mdi-phone icon-sm icon-primary"></span>
+                                    <span class="list-item-text">Serwis: <a href="tel:{{ __('footer.mobile') }}">{{ __('footer.mobile') }}</a></span>
+                                    <span class="list-item-text">Wysyłka: <a href="tel:{{ __('footer.ship_mobile') }}">{{ __('footer.ship_mobile') }}</a></span>
+                                </li>
                             </ul>
                         </div>
                         <div class="col-md-6 col-xl-5">

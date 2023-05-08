@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    @include('includes.section.preloader')
+{{--    @include('includes.section.preloader')--}}
 
     <div class="page">
         <!-- Page Header-->
