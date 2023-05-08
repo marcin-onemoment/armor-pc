@@ -3,7 +3,7 @@
 return [
     'contact' => 'telefon i adres',
     'address' => 'Kaliska 35A/212 Ostrów Wielkopolski',
-    'mobile' => '+48 515-702-840',
+    'mobile' => '+48 577-596-048',
     'ship_mobile' => '+48 575-643-594',
     'socialmedia' => 'portale społecznościowe',
     'socialmedia-info' => 'Obserwuj Nas na portalach społecznościowych i bądź zawsze na bieżąco z naszymi ofertami.',

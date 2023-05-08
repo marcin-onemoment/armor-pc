@@ -5,5 +5,5 @@ return [
     'item2' => 'Naprawa',
     'item3' => 'Oferta',
     'item4' => 'Kontakt',
-    'mobile' => '+48 515-702-840',
+    'mobile' => '+48 577-596-048',
     ];
