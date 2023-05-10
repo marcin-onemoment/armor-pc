@@ -3,6 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ArmorPC - Twój komputer w dobrych rękach </title>
+    <meta name="description" content="Armor PC świadzczy uslug z zakresu serwisowania sprzętu komputerowego oraz laptopów. Potrzebujesz nowego laptopa? Zapraszamy do nas.">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ config('app.name', 'ArmorPC') }}</title>
@@ -26,5 +28,18 @@
 <script src="{{ asset('js/script.js') }}"></script>
 {{--<script src="{{ asset('js/form.js') }}"></script>--}}
 @stack('custom-scripts')
+
+@production
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQ7ZY2LKXD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-PQ7ZY2LKXD');
+    </script>
+@endproduction
+
 </body>
 </html>
