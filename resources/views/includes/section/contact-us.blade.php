@@ -31,13 +31,15 @@
 </section>
 
 @push('custom-scripts')
-    <script type="text/javascript">
+<script type="text/javascript">
+
         const username = document.querySelector("#username");
         const email = document.querySelector("#email");
         const title = document.querySelector("#title");
         const message = document.querySelector("#message");
         const sendBtn = document.querySelector(".send");
-
+        
+        
         const showError = (input, msg) => {
             const formBox = input.parentElement;
             const errorMsg = formBox.querySelector(".error-text");
@@ -45,12 +47,12 @@
             formBox.classList.add("error");
             errorMsg.textContent = msg + "!";
         };
-
+        
         const clearError = (input) => {
             const formBox = input.parentElement;
             formBox.classList.remove("error");
         };
-
+        
         const checkForm = (input) => {
             input.forEach((el) => {
                 if (el.value === "") {
@@ -69,11 +71,11 @@
                 );
             }
         };
-
+        
         const checkMail = (email) => {
             const re =
-                /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
+            /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            
             if (re.test(email.value)) {
                 clearError(email);
             } else {
@@ -81,22 +83,31 @@
             }
         };
 
+        const clearForm = () => {
+            username.value = ''
+            email.value = ''
+            title.value = ''
+            message.value = ''     
+        };
+
         const checkErrors = () => {
             const allInputs = document.querySelectorAll(".form-box");
             let countError = 0;
-
+            
             allInputs.forEach((el) => {
                 if (el.classList.contains("error")) {
                     countError++;
                 }
             });
-
+            
             if (countError === 0) {
                 sendBtn.classList.add("checked");
                 submit();
+                clearForm();
             }
         };
-
+        
+        
         const toastMixin = Swal.mixin({
             toast: true,
             icon: "success",

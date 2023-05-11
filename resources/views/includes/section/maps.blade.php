@@ -16,7 +16,7 @@
             <div class="row row-50 justify-content-center">
                 <div class="col-md-6 col-lg-4">
                     <div class="box-icon-classic box-icon-classic-contacts">
-                        <div class="box-icon-inner decorate-triangle"><img src="/images/icons8-phone-64.png"></div>
+                        <div class="box-icon-inner decorate-triangle"><img src="/images/icons8-phone-64.png" alt="ikona słuchawki telefonu" ></div>
                         <div class="box-icon-caption">
                             <h4><a href="tel:{{ __('maps.mobile') }}">{{ __('maps.mobile') }}</a></h4>
 
@@ -25,7 +25,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="box-icon-classic box-icon-classic-contacts">
-                        <div class="box-icon-inner decorate-circle"><img src="/images/icons8-location-64.png"></div>
+                        <div class="box-icon-inner decorate-circle"><img src="/images/icons8-location-64.png" alt="ikona lokalizacji" ></div>
                         <div class="box-icon-caption">
                             <h4> <a href="https://www.google.com/maps/place/ArmorPC+s.c./@51.6504459,17.821929,15z/data=!4m2!3m1!1s0x0:0xf52e34cf5306dc0c?sa=X&ved=2ahUKEwjbo73J--X-AhXJwosKHW2IDdcQ_BJ6BAhQEAc" target="_blank">{{ __('maps.address') }}</a></h4>
                         </div>
@@ -33,7 +33,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="box-icon-classic box-icon-classic-contacts">
-                        <div class="box-icon-inner decorate-rectangle"><img src="/images/icons8-paper-plane-64.png"></div>
+                        <div class="box-icon-inner decorate-rectangle"><img src="/images/icons8-paper-plane-64.png" alt="ikona papierowego samolotu" ></div>
                         <div class="box-icon-caption">
                             <h4><a href="mailto:{{ __('maps.email') }}">{{ __('maps.email') }}</a></h4>
 
