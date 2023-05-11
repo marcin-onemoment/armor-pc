@@ -16,7 +16,7 @@
         <div class="row g-0">
             <div class="col-md-6 col-lg-4">
                 <div class="team-classic">
-                    <div class="team-classic-figure"><img src="/images/damages/damage1.jpg" alt="Kobieta siedząca przed niedziałającym laptopem" />
+                    <div class="team-classic-figure"><img src="/images/damages/damage1.webp" alt="Kobieta siedząca przed niedziałającym laptopem" />
                     </div>
                     <div class="team-classic-caption">
                         <h4 class="team-name">{{ __('damages.damage1') }}</h4>
@@ -25,7 +25,7 @@
             </div>
             <div class="col-md-6 col-lg-4">
                 <div class="team-classic">
-                    <div class="team-classic-figure"><img src="/images/damages/damage2.jpg" alt="Mężczyzna rozkręcający obudowę laptopa"/>
+                    <div class="team-classic-figure"><img src="/images/damages/damage2.webp" alt="Mężczyzna rozkręcający obudowę laptopa"/>
                     </div>
                     <div class="team-classic-caption">
                         <h4 class="team-name">{{ __('damages.damage2') }}</h4>
@@ -34,7 +34,7 @@
             </div>
             <div class="col-md-6 col-lg-4">
                 <div class="team-classic">
-                    <div class="team-classic-figure"><img src="/images/damages/damage3.jpg" alt="Zbliżenie na płytę główną laptopa"/>
+                    <div class="team-classic-figure"><img src="/images/damages/damage3.webp" alt="Zbliżenie na płytę główną laptopa"/>
                     </div>
                     <div class="team-classic-caption">
                         <h4 class="team-name">{{ __('damages.damage3') }}</h4>
@@ -43,7 +43,7 @@
             </div>
             <div class="col-md-6 col-lg-4">
                 <div class="team-classic">
-                    <div class="team-classic-figure"><img src="/images/damages/damage4.jpg" alt="Mężczyzna umieszczający podzespół w obudowie PC"/>
+                    <div class="team-classic-figure"><img src="/images/damages/damage4.webp" alt="Mężczyzna umieszczający podzespół w obudowie PC"/>
                     </div>
                     <div class="team-classic-caption">
                         <h4 class="team-name">{{ __('damages.damage4') }}</h4>
@@ -52,7 +52,7 @@
             </div>
             <div class="col-md-6 col-lg-4">
                 <div class="team-classic">
-                    <div class="team-classic-figure"><img src="/images/damages/damage5.jpg" alt="Laptop z wgrywaną aktualizacją"/>
+                    <div class="team-classic-figure"><img src="/images/damages/damage5.webp" alt="Laptop z wgrywaną aktualizacją"/>
                     </div>
                     <div class="team-classic-caption">
                         <h4 class="team-name">{{ __('damages.damage5') }}</h4>
@@ -61,7 +61,7 @@
             </div>
             <div class="col-md-6 col-lg-4">
                 <div class="team-classic">
-                    <div class="team-classic-figure"><img src="/images/damages/damage6.jpg" alt="Napis Security"/>
+                    <div class="team-classic-figure"><img src="/images/damages/damage6.webp" alt="Napis Security"/>
                     </div>
                     <div class="team-classic-caption">
                         <h4 class="team-name-long">{{ __('damages.damage6') }}</h4>

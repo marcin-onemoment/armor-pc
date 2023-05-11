@@ -5664,11 +5664,11 @@ html [class*=section-].section-bottom-0 {
 }
 
 .section-main-bunner .carousel-inner .one {
-  background-image: url("/images/header/carousel-one.jpg");
+  background-image: url("/images/header/carousel-one.webp");
 }
 
 .section-main-bunner .carousel-inner .two {
-  background-image: url("/images/header/carousel-two.jpg");
+  background-image: url("/images/header/carousel-two.webp");
 }
 
 .section-main-bunner .main-bunner-inner {
