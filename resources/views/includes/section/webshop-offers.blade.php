@@ -36,7 +36,7 @@
                                                 <div class="event-item-classic-caption ml-3">
                                                     <h4 class="event-item-classic-title"><a target="_blank" href="{{ $product->offer_link }}">{{ $product->name }}</a></h4>
                                                     <h5>Cena&nbsp;<span>{{ $product->price }}</span></h5>
-                                                    <a class="button button-primary btn-sm" style="padding: 0.5rem 2rem !important; font-size: 0.9rem !important" href="{{ $product->offer_link }}">KUP TERAZ</a>
+                                                    <a class="button button-primary btn-sm" style="padding: 0.5rem 2rem !important; font-size: 0.9rem !important" href="{{ $product->offer_link }}" target="_blank">KUP TERAZ</a>
                                                 </div>
                                             </div>
                                         @endforeach

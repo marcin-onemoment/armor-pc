@@ -14936,3 +14936,18 @@ Did you mean one of these?
 #60 /var/www/app/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #61 {main}
 "} 
+[2023-05-18 19:04:14] local.ERROR: Class "DOMDocument" not found {"exception":"[object] (Error(code: 0): Class \"DOMDocument\" not found at /home/marcin/projects/one-moment/armor-pc/vendor/symfony/console/Descriptor/XmlDescriptor.php:84)
+[stacktrace]
+#0 /home/marcin/projects/one-moment/armor-pc/vendor/symfony/console/Descriptor/XmlDescriptor.php(145): Symfony\\Component\\Console\\Descriptor\\XmlDescriptor->getApplicationDocument()
+#1 /home/marcin/projects/one-moment/armor-pc/vendor/symfony/console/Descriptor/Descriptor.php(43): Symfony\\Component\\Console\\Descriptor\\XmlDescriptor->describeApplication()
+#2 /home/marcin/projects/one-moment/armor-pc/vendor/symfony/console/Helper/DescriptorHelper.php(65): Symfony\\Component\\Console\\Descriptor\\Descriptor->describe()
+#3 /home/marcin/projects/one-moment/armor-pc/vendor/symfony/console/Command/ListCommand.php(71): Symfony\\Component\\Console\\Helper\\DescriptorHelper->describe()
+#4 /home/marcin/projects/one-moment/armor-pc/vendor/symfony/console/Command/Command.php(312): Symfony\\Component\\Console\\Command\\ListCommand->execute()
+#5 /home/marcin/projects/one-moment/armor-pc/vendor/symfony/console/Application.php(1022): Symfony\\Component\\Console\\Command\\Command->run()
+#6 /home/marcin/projects/one-moment/armor-pc/vendor/symfony/console/Application.php(314): Symfony\\Component\\Console\\Application->doRunCommand()
+#7 /home/marcin/projects/one-moment/armor-pc/vendor/symfony/console/Application.php(168): Symfony\\Component\\Console\\Application->doRun()
+#8 /home/marcin/projects/one-moment/armor-pc/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run()
+#9 /home/marcin/projects/one-moment/armor-pc/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(155): Illuminate\\Console\\Application->run()
+#10 /home/marcin/projects/one-moment/armor-pc/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#11 {main}
+"} 
