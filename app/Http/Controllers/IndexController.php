@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Helper\AllegroOffers;
 use App\Models\Opinion;
+use Illuminate\Support\Facades\Cache;
 
 class IndexController extends Controller
 {
@@ -14,7 +16,10 @@ class IndexController extends Controller
     public function index()
     {
         $opinions = Opinion::all();
+        $offers = Cache::remember('allegro_offers', 43200, function (){
+            return AllegroOffers::getCategorizedAllegroProducts();
+        });
 
-        return view('index', compact('opinions'));
+        return view('index', compact('opinions', 'offers'));
     }
 }

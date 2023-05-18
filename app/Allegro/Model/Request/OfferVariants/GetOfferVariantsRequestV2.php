@@ -1,0 +1,33 @@
+<?php
+/**
+ * Copyright: IMPER.INFO Adrian Szuszkiewicz
+ * Date: 09.07.19
+ * Time: 16:27
+ */
+
+namespace App\Allegro\Model\Request\OfferVariants;
+
+
+use GuzzleHttp\Psr7\Request;
+use App\Allegro\Constants\ContentType;
+use App\Allegro\Model\Request\RequestTrait;
+use Lcobucci\JWT\Token;
+
+class GetOfferVariantsRequestV2 extends Request
+{
+    use RequestTrait;
+
+    public function __construct(Token $token, ?int $offset = null, ?int $limit = null, ?string $query = null)
+    {
+        parent::__construct(
+            'GET',
+            $this->prepareApiUri('/sale/offer-variants', [
+                'user.id' => $token->claims()->get('user_name'),
+                'offset' => $offset,
+                'limit' => $limit,
+                'query' => $query,
+            ]),
+            $this->prepareHeaders($token, ContentType::PUBLIC_V1)
+        );
+    }
+}

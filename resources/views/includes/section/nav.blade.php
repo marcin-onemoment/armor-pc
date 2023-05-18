@@ -29,8 +29,8 @@
                             </li>
                             <li class="rd-nav-item"><a class="rd-nav-link" href="#repairs">{{ __('nav.item2') }}</a>
                             </li>
-                            <!-- <li class="rd-nav-item"><a class="rd-nav-link" href="#pricing">{{ __('nav.item3') }}</a>
-                            </li> -->
+                            <li class="rd-nav-item"><a class="rd-nav-link" href="#pricing">{{ __('nav.item3') }}</a>
+                            </li>
                             <li class="rd-nav-item"><a class="rd-nav-link" href="#contacts">{{ __('nav.item4') }}</a>
                             </li>
                         </ul>

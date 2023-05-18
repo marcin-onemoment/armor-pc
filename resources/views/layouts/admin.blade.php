@@ -63,6 +63,30 @@
         </li>
 
         <!-- Divider -->
+        <hr class="sidebar-divider">
+
+        <!-- Heading -->
+        <div class="sidebar-heading">
+            {{ __('Allegro') }}
+        </div>
+
+        <!-- Nav Item - Allegro -->
+        <li class="nav-item {{ Nav::isRoute('allegro.index') }}">
+            <a class="nav-link" href="{{ route('allegro.index') }}">
+                <i class="fas fa-fw fa-hands-helping"></i>
+                <span>{{ __('Integration') }}</span>
+            </a>
+        </li>
+
+        <!-- Nav Item - Allegro -->
+        <li class="nav-item {{ Nav::isRoute('allegro.products') }}">
+            <a class="nav-link" href="{{ route('allegro.products') }}">
+                <i class="fas fa-fw fa-hands-helping"></i>
+                <span>{{ __('Categories') }}</span>
+            </a>
+        </li>
+
+        <!-- Divider -->
         <hr class="sidebar-divider d-none d-md-block">
 
         <!-- Sidebar Toggler (Sidebar) -->
@@ -114,18 +138,14 @@
 
             </nav>
             <!-- End of Topbar -->
-
-            @if($errors->any())
-                <div class="alert alert-danger">
-                    <ul>
-                        @foreach($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
-                </div>
-            @endif
             @if($message = Session::get('success'))
                 <div class="alert alert-success">
+                    {{ $message }}
+                </div>
+            @endif
+
+            @if($message = Session::get('errors'))
+                <div class="alert alert-danger">
                     {{ $message }}
                 </div>
             @endif

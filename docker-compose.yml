@@ -51,6 +51,18 @@ services:
       - PMA_HOST=mysql
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_USER_NAME=root
+  ngrok:
+      image: wernight/ngrok:latest
+      ports:
+          - 4040:4040
+      links:
+          - nginx
+      environment:
+          - NGROK_LOOK_DOMAIN=nginx
+          - NGROK_PORT=80
+          - NGROK_AUTH=1vG0dmVF4Qux6u2egVNDEdBXI2w_6TogzyXqc3EYX1fxFmDxk
+      volumes:
+          - ../${NAME}:/var/app/www
   redis:
     build:
       context: ./docker/redis
