@@ -15,7 +15,7 @@
             </div>
         </div>
         <div class="card-body">
-            @if($allegroAuthorize->isExpired())
+            @if(!$allegroAuthorize || $allegroAuthorize->isExpired())
                 <a href="{{ route('allegro.authorize') }}" class="btn btn-success btn-lg">{{ __('Authorize') }}</a>
             @else
                 <a href="{{ route('allegro.fetch-offers') }}" class="btn btn-info btn-lg">{{ __('Fetch offers') }}</a>
