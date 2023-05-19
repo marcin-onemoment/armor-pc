@@ -13,7 +13,7 @@ class AllegroOffers
 
         $categories = AllegroProduct::select('category_id', DB::raw('count(*) as total'))
             ->orderBy('total', 'DESC')
-            ->limit(6)
+            ->limit(5)
             ->groupBy('category_id')
             ->pluck('total','category_id')
             ->toArray();
