@@ -40,6 +40,8 @@ class DownloadAllegroProducts extends Command
         $offerResponse = SaleOffers::getSaleOffers($options);
 
         if (count($offerResponse->offers) > 0) {
+            AllegroProduct::query()->delete();
+
             $offset = 0;
             $count = $offerResponse->count;
             $totalOffset = $offerResponse->totalCount;

@@ -3,6 +3,7 @@
 namespace App\Jobs;
 
 use App\Allegro\AllegroClient;
+use App\Allegro\Helper\Api\Categories;
 use App\Allegro\Helper\Api\SaleOffers;
 use App\Allegro\Helper\CredentialsHelper;
 use App\Allegro\Model\Request\UserOffersInformation\GetOffersRequestV1;
@@ -51,12 +52,23 @@ class SaveAllegroProductsFromApi implements ShouldQueue
             ],[
                 'allegro_id' => $offer->id,
                 'name' => $offer->name,
-                'category_id' => $offer->category->id,
+                'category_id' => $this->getCategory($offer->category->id),
                 'image_url' => $offer->primaryImage->url,
                 'amount' => $offer->sellingMode->price->amount,
             ]);
         }
 
         Cache::forget('allegro_offers');
+    }
+
+    protected function getCategory($categoryDetails)
+    {
+        $child = Categories::getCategoryDetails($categoryDetails);
+
+        if ($child && $child->parent->id) {
+            return $child->parent->id;
+        } else {
+            return $categoryDetails;
+        }
     }
 }
