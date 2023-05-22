@@ -62,6 +62,14 @@
             </a>
         </li>
 
+        <!-- Nav Item - About -->
+        <li class="nav-item {{ Nav::isRoute('contact.index') }}">
+            <a class="nav-link" href="{{ route('contact.index') }}">
+                <i class="fas fa-fw fa-list"></i>
+                <span>{{ __('Contacts') }}</span>
+            </a>
+        </li>
+
         <!-- Divider -->
         <hr class="sidebar-divider">
 

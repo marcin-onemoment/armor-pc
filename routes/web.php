@@ -30,6 +30,7 @@ Route::get('allegro/save-authorization', [\App\Http\Controllers\Admin\Allegro\Al
 
 Route::prefix('admin')->middleware('auth:web')->group(function () {
    Route::resource('opinions', \App\Http\Controllers\Admin\OpinionController::class);
+   Route::resource('contact', \App\Http\Controllers\Admin\ContactController::class)->only('index', 'destroy');
    Route::get('allegro/authorize', [\App\Http\Controllers\Admin\Allegro\AllegroController::class, 'authorize'])->name('allegro.authorize');
    Route::get('allegro/fetch-offers', [\App\Http\Controllers\Admin\Allegro\AllegroController::class, 'fetchOffers'])->name('allegro.fetch-offers');
    Route::get('allegro/products', [\App\Http\Controllers\Admin\Allegro\AllegroProductsController::class, 'index'])->name('allegro.products');
