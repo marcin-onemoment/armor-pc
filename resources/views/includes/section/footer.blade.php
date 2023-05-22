@@ -53,7 +53,8 @@
                         <div class="col-12"><a class="brand" href="#home"><img class="brand-logo-light" src="images/logo_transparent.png" alt="" width="219" height="46"/></a>
                         </div>
                         <div class="col-12">
-                            <p>{{ __('footer.info') }}</p>
+                            <p>{{ __('footer.info') }}</p><br>
+                            <a style="color: white;" target="_blank" href="{{ asset('pdf/Regulamin strony ArmorPC.pdf') }}">Regulamin</a>
                             <div class="footer-divider"></div>
                             <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>Armor PC</span><span>.&nbsp;</span><span>{{ __('footer.rights') }}</span>
                             </p>

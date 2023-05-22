@@ -41,5 +41,6 @@
     </script>
 @endproduction
 
+@include('cookie-consent::index')
 </body>
 </html>
