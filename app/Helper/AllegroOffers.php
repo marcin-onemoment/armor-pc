@@ -2,6 +2,7 @@
 namespace App\Helper;
 
 use App\Allegro\Helper\Api\Categories;
+use App\Models\AllegroCategory;
 use App\Models\AllegroProduct;
 use Illuminate\Support\Facades\DB;
 
@@ -11,20 +12,13 @@ class AllegroOffers
     {
         $offers = [];
 
-        $categories = AllegroProduct::select('category_id', DB::raw('count(*) as total'))
-            ->orderBy('total', 'DESC')
-            ->limit(6)
-            ->groupBy('category_id')
-            ->pluck('total','category_id')
-            ->toArray();
+        $categories = AllegroCategory::query()->whereNull('parent_id')->where('enabled', true)->get();
 
-        foreach ($categories as $categoryId => $count) {
-            $categoryDetails = Categories::getCategoryDetails($categoryId);
-
-            if ($categoryDetails) {
-                $offers[$categoryId]['category_name'] = $categoryDetails->name;
-                $offers[$categoryId]['products'] = AllegroProduct::query()->where('category_id', $categoryId)->limit(5)->get();
-            }
+        foreach ($categories as $category) {
+                $offers[$category->id]['category_name'] = $category->name;
+                $offers[$category->id]['products'] = AllegroProduct::query()->whereHas('categories', function ($query) use ($category) {
+                    $query->where('parent_id', $category->id)->where('enabled', true);
+                })->limit(5)->get();
         }
 
         return $offers;

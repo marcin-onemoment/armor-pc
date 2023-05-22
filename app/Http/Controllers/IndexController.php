@@ -16,6 +16,7 @@ class IndexController extends Controller
     public function index()
     {
         $opinions = Opinion::all();
+
         $offers = Cache::remember('allegro_offers', 43200, function (){
             return AllegroOffers::getCategorizedAllegroProducts();
         });

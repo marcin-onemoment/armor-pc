@@ -53,8 +53,6 @@ class AllegroController
 
     public function fetchOffers()
     {
-        $allegroAuthorize = AllegroAuthorize::latest()->first();
-
         Artisan::call('allegro:fetch-products');
 
         return redirect()->route('allegro.index')->with('success', __('Success fetched'));

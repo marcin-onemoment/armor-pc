@@ -79,6 +79,14 @@
         </li>
 
         <!-- Nav Item - Allegro -->
+        <li class="nav-item {{ Nav::isRoute('allegro.categories') }}">
+            <a class="nav-link" href="{{ route('allegro.categories') }}">
+                <i class="fas fa-fw fa-hands-helping"></i>
+                <span>{{ __('Categories') }}</span>
+            </a>
+        </li>
+
+        <!-- Nav Item - Allegro -->
         <li class="nav-item {{ Nav::isRoute('allegro.products') }}">
             <a class="nav-link" href="{{ route('allegro.products') }}">
                 <i class="fas fa-fw fa-hands-helping"></i>

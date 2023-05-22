@@ -33,5 +33,8 @@ Route::prefix('admin')->middleware('auth:web')->group(function () {
    Route::get('allegro/authorize', [\App\Http\Controllers\Admin\Allegro\AllegroController::class, 'authorize'])->name('allegro.authorize');
    Route::get('allegro/fetch-offers', [\App\Http\Controllers\Admin\Allegro\AllegroController::class, 'fetchOffers'])->name('allegro.fetch-offers');
    Route::get('allegro/products', [\App\Http\Controllers\Admin\Allegro\AllegroProductsController::class, 'index'])->name('allegro.products');
+   Route::get('allegro/categories', [\App\Http\Controllers\Admin\Allegro\AllegroCategoriesController::class, 'index'])->name('allegro.categories');
+   Route::get('allegro/categories/edit//{id}', [\App\Http\Controllers\Admin\Allegro\AllegroCategoriesController::class, 'edit'])->name('allegro.categories.edit');
+   Route::post('allegro/categories/switch/{id}', [\App\Http\Controllers\Admin\Allegro\AllegroCategoriesController::class, 'switch'])->name('allegro.categories.switch');
    Route::resource('allegro', \App\Http\Controllers\Admin\Allegro\AllegroController::class);
 });

@@ -12,7 +12,6 @@ class AllegroProduct extends Model
     protected $fillable = [
         'allegro_id',
         'name',
-        'category_id',
         'image_url',
         'amount',
     ];
@@ -25,5 +24,10 @@ class AllegroProduct extends Model
     public function getPriceAttribute()
     {
         return number_format($this->amount, 2, '.') . ' zł';
+    }
+
+    public function categories()
+    {
+        return $this->belongsToMany(AllegroCategory::class, 'allegro_product_categories');
     }
 }
