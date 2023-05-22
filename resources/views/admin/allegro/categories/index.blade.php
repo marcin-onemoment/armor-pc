@@ -33,8 +33,11 @@
                                     @csrf
                                     @method('POST')
                                     <input type="submit" class="btn {{ $category->enabled ? 'btn-danger' : 'btn-success' }} btn-sm" value="{{ $category->enabled ? 'Disable' : 'Enable' }}" />
+                                    @if($category->enabled)
+                                        <a href="{{ route('allegro.categories.edit', $category->id) }}" class="btn btn-warning btn-sm">{{ __('Edit') }}</a>
+                                    @endif
                                 </form>
-                                <a href="{{ route('allegro.categories.edit', $category->id) }}" class="mt-2 btn btn-warning btn-sm">{{ __('Edit') }}</a>
+
                             </td>
                         </tr>
                     @endforeach
