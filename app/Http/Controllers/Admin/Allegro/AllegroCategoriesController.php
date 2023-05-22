@@ -10,7 +10,7 @@ class AllegroCategoriesController extends Controller
 {
     public function index()
     {
-        $categories = AllegroCategory::query()->whereNull('parent_id')->get();
+        $categories = AllegroCategory::query()->whereNull('parent_id')->withCount('products')->orderBy('products_count', 'desc')->get();
 
         return view('admin.allegro.categories.index', compact('categories'));
     }
