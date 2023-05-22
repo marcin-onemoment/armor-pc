@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin\Allegro;
 
 use App\Http\Controllers\Controller;
 use App\Models\AllegroCategory;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Request;
 
 class AllegroCategoriesController extends Controller
@@ -33,6 +34,8 @@ class AllegroCategoriesController extends Controller
         $category->update(['enabled' => $switch]);
 
         $category->childs()->update(['enabled' => $switch]);
+
+        Cache::forget('allegro_offers');
 
         return redirect()->route('allegro.categories')->with('success', __('Category updated'));
     }
