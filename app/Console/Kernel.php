@@ -21,7 +21,8 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule): void
     {
-        // $schedule->command('inspire')->hourly();
+        $schedule->command('allegro:fetch-categories')->dailyAt('22:00');
+        $schedule->command('allegro:fetch-products')->dailyAt('23:00');
     }
 
     /**

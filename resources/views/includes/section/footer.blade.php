@@ -54,7 +54,7 @@
                         </div>
                         <div class="col-12">
                             <p>{{ __('footer.info') }}</p><br>
-{{--                            <a style="color: white;" target="_blank" href="{{ asset('pdf/Regulamin strony ArmorPC.pdf') }}">Regulamin</a>--}}
+                            <a style="color: white;" target="_blank" href="{{ route('index.terms') }}">Regulamin</a>
                             <div class="footer-divider"></div>
                             <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>Armor PC</span><span>.&nbsp;</span><span>{{ __('footer.rights') }}</span>
                             </p>

@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [IndexController::class, 'index'] );
+Route::get('/terms', [IndexController::class, 'terms'])->name('index.terms');
 
 Auth::routes();
 
