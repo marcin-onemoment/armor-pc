@@ -23,6 +23,7 @@ class Kernel extends ConsoleKernel
     {
         $schedule->command('allegro:fetch-categories')->dailyAt('22:00');
         $schedule->command('allegro:fetch-products')->dailyAt('23:00');
+        $schedule->command('allegro:refresh-token')->everyTwoHours();
     }
 
     /**
