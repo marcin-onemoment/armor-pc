@@ -18,7 +18,7 @@ class AllegroOffers
                 $offers[$category->id]['category_name'] = $category->name;
                 $offers[$category->id]['products'] = AllegroProduct::query()->whereHas('categories', function ($query) use ($category) {
                     $query->where('parent_id', $category->id)->where('enabled', true);
-                })->limit(5)->get();
+                })->limit(10)->get();
         }
 
         return $offers;
